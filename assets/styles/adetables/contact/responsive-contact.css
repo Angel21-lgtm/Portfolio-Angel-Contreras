@@ -1,0 +1,121 @@
+/* 300 and 575 pixels */
+@media (min-width: 300px){
+    .title-contact{
+        font-size: 2.5rem;
+    }
+    
+    .title-contact::after{
+        height: 5px;
+    }
+
+    form input{
+        font-size: large;
+    }
+
+    form .message-form{
+        font-size: large;
+    }
+
+    #error-message{
+        font-size: larger;
+    }
+
+    .contact-info p{
+        font-size: medium;
+    }
+    
+    .contact-info p b{
+        font-size: large;
+    }
+}
+
+/* 576 and 767 pixels */
+@media (min-width: 576px){
+    form input{
+        font-size: larger;
+    }
+
+    form .message-form{
+        font-size: larger;
+    }
+
+    #error-message{
+        font-size: x-large;
+    }
+}
+
+/* 768 and 991 pixels */
+@media (min-width: 768px){
+    .title-contact{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 3.5rem;
+    }
+    
+    .title-contact::after{
+        height: 7px;
+    }
+    form input{
+        font-size: x-large;
+    }
+
+    form .name-form{
+        width: 49%;
+        max-width: 800px;
+    }
+    
+    form .email-form{
+        width: 49%;
+        max-width: 800px;
+    }
+
+    form .message-form{
+        font-size: x-large;
+    }
+
+    #error-message{
+        font-size: xx-large;
+    }
+
+    .contact-info p{
+        font-size: large;
+    }
+    
+    .contact-info p b{
+        font-size: larger;
+    }
+}
+
+/* 992 and 1199 pixels */
+@media (min-width: 992px){
+    .title-contact{
+        font-size: 4rem;
+    }
+}
+
+/* 1200 and onwards pixels */
+@media (min-width: 1200px ){
+    .title-contact{
+        font-size: 5rem;
+    }
+
+    .title-contact::after{
+        height: 9px;
+    }
+
+    form input{
+        font-size: xx-large;
+    }
+
+    form .message-form{
+        font-size: xx-large;
+    }
+
+    .contact-info p{
+        font-size: larger;
+    }
+    
+    .contact-info p b{
+        font-size: x-large;
+    }
+}

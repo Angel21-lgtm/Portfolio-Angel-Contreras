@@ -1,0 +1,129 @@
+.title-skills{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-weight: 900;
+    font-size: x-large;
+    text-shadow: 0 0 9px var(--black);
+    text-align: center;
+    color: var(--white-da);
+    transition: all ease 0.5s;
+}
+
+.title-skills::after{
+    content: "";
+    background-color: var(--orange);
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 37.5%;
+}
+
+.isometric{
+    margin-bottom: 3rem;
+}
+
+.isometric div{
+    max-width: 450px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.isometric div .link-isometric{
+    height: auto;
+    padding: 1rem;
+    color: var(--white);
+    border-radius: 1rem;
+    background: var(--black-img);
+    position: absolute;
+    top: -5%;
+    opacity: 0;
+    animation: link-isometric 1s infinite;
+}
+
+.isometric div .link-isometric p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-small;
+    text-align: center;
+}
+
+.subtitle-skills{
+    margin: 0 0 3rem 0;
+    border-bottom: solid 5px var(--orange);
+    padding-bottom: 0.5rem;
+    color: var(--white-da);
+    text-shadow: 0 0 5px var(--black);
+    text-align: center;
+}
+
+.subtitle-skills::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--white-da);
+    bottom: -40px;
+    right: 0;
+    box-shadow: 0 0 2rem 1rem var(--black);
+    animation: skills 3s ease infinite alternate;
+}
+
+.currently-studying{
+    margin: 2rem 0 4rem 0;
+}
+
+.currently-studying div{
+    max-width: 200px;
+    padding: 1rem;
+    transition: all ease-in 0.3s;
+}
+
+.skills-pro{
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.skills-pro > .skill-item{
+    margin-bottom: 3rem;
+    max-width: 550px;
+    background: var(--black-img);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: all ease-out 0.3s;
+}
+
+.skills-pro > .skill-item > .img-skill{
+    margin-bottom: 1rem;
+    max-width: 100px;
+    transition: all ease-in 0.3s;
+}
+
+.skills-pro > .skill-item p{
+    color: var(--white);
+    font-size: medium;
+}
+
+.skills-pro > .skill-item .level-skill{
+    height: 10px;
+    background-color: var(--white);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.skills-pro > .skill-item .level-skill > .active-level-skill{
+    background-color: var(--orange);
+    border-radius: 1rem;
+    left: -100%;
+    transition: all 3s ease-in-out;
+}
+
+.skills-pro > .skill-item button{
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    color: var(--white);
+    background: var(--amy-crisp);
+    box-shadow: none;
+    font-size: x-small;
+}

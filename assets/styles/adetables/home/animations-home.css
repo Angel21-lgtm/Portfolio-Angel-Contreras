@@ -1,0 +1,10 @@
+.home > div > div > button:hover{
+    opacity: 1;
+    background: var(--warm-flame);
+    color: var(--black);
+    transition: all ease 0.5s;
+}
+
+.home > nav > ul li img:hover{
+    transform: scale(1.3);
+}

@@ -1,0 +1,13 @@
+#about:hover .title-about{
+    color: var(--white-da);
+}
+
+#about > .content-section-about > div > .photo:hover{
+    box-shadow: -0.5rem -0.5rem 0.5rem 0.5rem var(--black);
+}
+
+#about > .content-section-about >  .text-about-me-content-sections button:hover{
+    transform: scale(1.5);
+    opacity: 0.5;
+    background-color: transparent;
+}

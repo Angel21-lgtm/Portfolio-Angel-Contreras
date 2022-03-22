@@ -1,0 +1,81 @@
+.home{
+    padding: 1.5rem 0.1rem;
+}
+
+.home > div > h1{
+    margin: 2.5rem 0 1.5rem 0;
+    background-color: rgba(245, 234, 234, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+.home > div > div > button{
+    border-radius: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: var(--white);
+    opacity: 0.8;
+    transition: all ease 0.5s;
+}
+
+.home > div > h2{
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.home > div > h2 > span{
+    margin-top: 0.5rem;
+    color: var(--orange);
+}
+
+.home > div > a{
+    padding: 1rem 0.5rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 0 1rem 0.2rem var(--black);
+    font-size: small;
+    font-weight: 900;
+    transition: all ease-in-out 0.5s;
+}
+
+.home > nav{
+    padding: 0.5rem;
+    max-width: 200px;
+}
+
+.home > nav > ul li img{
+    cursor: pointer;
+    transition: all ease-in 0.5s;
+}
+
+.home > .svg{
+    bottom: 0;
+    opacity: 0.8;
+    height: 50px;
+}
+
+.content-sections{
+    overflow: hidden;
+}
+
+.content-sections > .content-sections-text{
+    width: 500%;
+    left: -400%;
+}
+
+.content-sections > .content-sections-text > p{
+    width: 100%;
+    text-align: center;
+}
+
+/* events */
+.cv{
+    background-color: var(--orange) !important;
+    text-shadow: 5px 5px 6px var(--black);
+    border-radius: 3rem !important;
+    color: var(--white) !important;
+    box-shadow: none !important;
+}

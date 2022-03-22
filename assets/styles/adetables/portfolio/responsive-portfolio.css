@@ -1,0 +1,120 @@
+/* 300 and 575 pixels */
+@media (min-width: 300px){
+    .title-portfolio{
+        font-size: 2.5rem;
+    }
+    
+    .title-portfolio::after{
+        height: 5px;
+    }
+
+    .nav-sections-projects button{
+        font-size: medium;
+    }
+
+    /* projects */
+    .project-container h3{
+        font-size: xx-large;
+    }
+}
+
+/* 576 and 767 pixels */
+@media (min-width: 576px){
+    .nav-sections-projects button{
+        font-size: large;
+        padding: 0.3rem;
+        margin: 7px;
+    }
+
+    /* projects */
+    .project-container{
+        height: 450px;
+        max-width: 500px;
+    }
+
+    .project-container h3{
+        font-size: 3rem;
+    }
+
+    .project-container p{
+        font-size: larger;
+    }
+
+    .project-container .eye{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* 768 and 991 pixels */
+@media (min-width: 768px){
+    .title-portfolio{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 3.5rem;
+    }
+    
+    .title-portfolio::after{
+        height: 7px;
+    }
+
+    /* projects */
+    .project-container{
+        height: 300px;
+        max-width: 300px;
+    }
+
+    .project-container h3{
+        font-size: xx-large;
+    }
+
+    .project-container p{
+        font-size: medium;
+    }
+
+    .project-container .eye{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* 992 and 1199 pixels */
+@media (min-width: 992px){
+    .title-portfolio{
+        font-size: 4rem;
+    }
+}
+
+/* 1200 and onwards pixels */
+@media (min-width: 1200px ){
+    .title-portfolio{
+        font-size: 5rem;
+    }
+
+    .title-portfolio::after{
+        height: 9px;
+    }
+
+    .nav-sections-projects button{
+        font-size: x-large;
+    }
+
+    /* projects */
+    .project-container{
+        height: 350px;
+        max-width: 350px;
+    }
+
+    .project-container h3{
+        font-size: 2.5rem;
+    }
+
+    .project-container p{
+        font-size: large;
+    }
+
+    .project-container .eye{
+        width: 35px;
+        height: 35px;
+    }
+}

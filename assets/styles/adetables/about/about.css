@@ -1,0 +1,164 @@
+#about > .title-about{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-weight: 900;
+    font-size: xx-large;
+    text-shadow: 0 0 9px var(--black);
+    color: var(--white);
+    transition: all ease 0.5s;
+}
+
+#about > .title-about::after{
+    content: "";
+    background-color: var(--orange);
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 37.5%;
+}
+
+#about > .content-section-about{
+    padding: 0.5rem;
+}
+
+#about > .content-section-about > .who-i-am{
+    padding: 1rem 0.5rem;
+    border: solid 5px var(--orange);
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px var(--black);
+}
+
+#about > .content-section-about > h2{
+    margin: 0 0 1rem 0;
+    padding: 1rem 0.5rem;
+    text-align: start;
+    background-color: var(--orange);
+    text-shadow: none;
+    color: var(--white);
+}
+
+#about > .content-section-about > h3{
+    margin: 0 0 1rem 0;
+    border-bottom: solid 5px var(--orange);
+    padding-bottom: 0.5rem;
+}
+
+#about > .content-section-about > .text-about-me{
+    text-align: start;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    max-width: 600px;
+    border-bottom: solid 5px var(--orange);
+    color: #061a30;
+    text-shadow: 0 0 5px var(--black);
+    font-family: "Allison-Regular";
+    font-size: xx-large;
+    letter-spacing: 0;
+}
+
+#about > .content-section-about > div > .photo{
+    background: var(--black-img), url("../../../images/photos/about/my-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 1rem 0;
+    max-width: 600px;
+    height: 250px;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 0.8rem 0.5rem var(--black);
+    cursor: zoom-in;
+    transition: all ease-in 0.5s;
+}
+
+#about > .content-section-about > div > .photo > .zoom-my-photo{
+    top: 5%;
+    right: -90%;
+    width: 90%;
+    height: 90%;
+    z-index: 10;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s;
+}
+
+#about > .content-section-about > div > .photo > button {
+    background-color: transparent;
+    box-shadow: none;
+    z-index: 11;
+    top: 0;
+    right: -25%;
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s;
+}
+
+#about > .content-section-about > .text-about-me-content-sections{
+    margin: 3rem 0;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem -1.5rem var(--black);
+}
+
+#about > .content-section-about > .text-about-me-content-sections .text-about-me-sections{
+    width: 600%;
+    right: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+#about > .content-section-about >  .text-about-me-content-sections .text-about-me-sections p{
+    width: 100%;
+    padding: 3px;
+    font-size: 0.6rem;
+    letter-spacing: 0;
+    color: var(--black);
+    text-align: center;
+    font-weight: 100;
+    text-shadow: 0 0 5px var(--black);
+}
+
+#about > .content-section-about >  .text-about-me-content-sections .text-about-me-sections p b{
+    color: #061a30;
+    font-family: "Allison-Regular";
+    font-size: x-large;
+    text-align: center;
+    text-shadow: 0 0 5px var(--black);
+    border-bottom: solid 5px #061a30;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#about > .content-section-about >  .text-about-me-content-sections button{
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 1;
+    max-width: 250px;
+    transition: all ease 0.5s;
+}
+
+#about > .content-section-about >  .text-about-me-content-sections #left-arrow{
+    left: -2%;
+}
+
+#about > .content-section-about >  .text-about-me-content-sections #right-arrow{
+    right: -2%;
+}
+
+/* evenst */
+.zoom-photo-style{
+    right: 5% !important;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+.right-zoom-photo-button{
+    right: 5% !important;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}

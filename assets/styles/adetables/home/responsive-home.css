@@ -1,0 +1,96 @@
+/* 300 and 575 pixels */
+@media (min-width: 300px){
+    .home > div > h1{
+        margin: 3.5rem 0 2.5rem 0;
+        padding: 1rem 1.5rem;
+        font-size: 3rem;
+    }
+
+    .home > div > div > button{
+        font-size: large;
+    }
+
+    .home > div > h2{
+        font-size: 2rem;
+    }
+
+    .home > div > a{
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+        font-size: medium;
+    }
+
+    .home > nav{
+        max-width: 250px;
+    }
+}
+
+/* 576 and 767 pixels */
+@media (min-width: 576px){
+    .home > div > h1{
+        margin: 4rem 0 4rem 0;
+        padding: 3rem 3.5rem;
+        font-size: 4rem;
+        border-radius: 3rem;
+    }
+
+    .home > div > div > button{
+        font-size: x-large;
+    }
+
+    .home > div > h2{
+        font-size: 3rem;
+    }
+
+    .home > nav{
+        max-width: 350px;
+    }
+}
+
+/* 768 and 991 pixels */
+@media (min-width: 768px){
+
+    .home > div > h1{
+        margin: 5rem 0 5rem 0;
+        padding: 3rem 3.5rem;
+        font-size: 5rem;
+        border-radius: 3rem;
+    }
+
+    .home > div > h2{
+        font-size: 4rem;
+    }
+
+}
+
+/* 992 and 1199 pixels */
+@media (min-width: 992px){
+
+}
+
+/* 1200 and onwards pixels */
+@media (min-width: 1200px ){
+    .home > div > h1{
+        padding: 4rem 4.5rem;
+        font-size: 6rem;
+        border-radius: 4rem;
+    }
+
+    .home > div > div > button{
+        font-size: xx-large;
+    }
+
+    .home > div > h2{
+        font-size: 5rem;
+    }
+
+    .home > div > a{
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+        font-size: large;
+    }
+
+    .home > nav{
+        max-width: 400px;
+    }
+}

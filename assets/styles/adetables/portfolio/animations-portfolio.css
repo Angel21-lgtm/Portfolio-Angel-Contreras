@@ -1,0 +1,52 @@
+#portfolio:hover .title-portfolio{
+    color: var(--white-da);
+}
+
+.nav-sections-projects button:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 0.5rem 0.1rem var(--black);
+}
+
+/* projects */
+.project-container:hover{
+    border: solid 4px var(--white-da);
+    box-shadow: 0 0 0.5rem 0.1rem var(--black);
+}
+
+.project-container:hover .hover-project-1{
+    right: 0;
+}
+
+.project-container:hover .hover-project-2{
+    left: 0;
+}
+
+
+.project-container:hover h3{
+    top: 25%;
+    opacity: 1;
+}
+
+.project-container:hover p{
+    bottom: 25%;
+    opacity: 1;
+}
+
+.project-container:hover .eye{
+    bottom: 5%;
+    opacity: 1;
+}
+
+@keyframes eye {
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}

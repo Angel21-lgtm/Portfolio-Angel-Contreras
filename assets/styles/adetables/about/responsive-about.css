@@ -1,0 +1,150 @@
+/* 300 and 575 pixels */
+@media (min-width: 300px){
+    #about > .title-about{
+        font-size: 2.5rem;
+    }
+
+    #about > .title-about::after{
+        height: 5px;
+    }
+
+    #about > .content-section-about > .who-i-am{
+        font-size: x-large;
+    }
+
+    #about > .content-section-about > h2{
+        padding: 0.5rem 0.5rem;
+        font-size: 2rem;
+    }
+
+    #about > .content-section-about > h3{
+        font-size: x-large;
+    }
+
+    #about > .content-section-about > div > .photo{
+        height: 350px;
+    }
+
+    #about > .content-section-about >  .text-about-me-content-sections .text-about-me-sections p{
+        padding: 6px;
+        font-size: 0.7rem;
+    }
+
+    #about > .content-section-about >  .text-about-me-content-sections .text-about-me-sections p b{
+        font-size: xx-large;
+    }
+}
+
+/* 576 and 767 pixels */
+@media (min-width: 576px){
+    #about > .content-section-about > div > .photo{
+        height: 450px;
+    }
+
+    #about > .content-section-about > .text-about-me-content-sections .text-about-me-sections p{
+        font-size: 1rem;
+        padding: 9px;
+    }
+}
+
+/* 768 and 991 pixels */
+@media (min-width: 768px){
+    #about > .title-about{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 3.5rem;
+    }
+
+    #about > .title-about::after{
+        height: 7px;
+    }
+
+    #about > .content-section-about > .text-about-me{
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+
+    #about > .content-section-about > div > .photo{
+        position: absolute;
+        right: 2%;
+        top: 0;
+        width: 45%;
+        height: 500px;
+        margin-bottom: 3rem;
+    }
+
+    #about > .content-section-about > .text-about-me-content-sections{
+        max-width: 800px;
+    }
+
+    #about > .content-section-about > .text-about-me-content-sections .text-about-me-sections p{
+        letter-spacing: 2px;
+        padding: 12px;
+    }
+}
+
+/* 992 and 1199 pixels */
+@media (min-width: 992px){
+    #about > .title-about{
+        font-size: 4rem;
+    }
+
+    #about > .content-section-about > h2{
+        font-size: 2.5rem;
+    }
+
+    #about > .content-section-about > .text-about-me{
+        font-size: 3rem;
+    }
+
+    #about > .content-section-about > div > .photo{
+        top: 4%;
+        height: 550px;
+    }
+
+    #about > .content-section-about > .text-about-me-content-sections{
+        max-width: 1000px;
+    }
+
+    #about > .content-section-about > .text-about-me-content-sections .text-about-me-sections p{
+        font-size: 1.5rem;
+        padding: 15px;
+        letter-spacing: 0;
+    }
+
+    #about > .content-section-about >  .text-about-me-content-sections .text-about-me-sections p b{
+        font-size: 2.5rem;
+    }
+}
+
+/* 1200 and onwards pixels */
+@media (min-width: 1200px ){
+    #about > .title-about{
+        font-size: 5rem;
+
+    }
+
+    #about > .title-about::after{
+        height: 9px;
+    }
+
+    #about > .content-section-about > h2{
+        font-size: 3rem;
+    }
+
+    #about > .content-section-about > h3{
+        font-size: xx-large;
+    }
+
+    #about > .content-section-about > div > .photo{
+        height: 600px;
+    }
+
+    #about > .content-section-about > .text-about-me-content-sections .text-about-me-sections p{
+        padding: 18px;
+    }
+
+    #about > .content-section-about >  .text-about-me-content-sections .text-about-me-sections p b{
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,74 @@
+.title-contact{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-weight: 900;
+    font-size: xx-large;
+    text-shadow: 0 0 9px var(--black);
+    color: var(--white-da);
+    transition: all ease 0.5s;
+}
+
+.title-contact::after{
+    content: "";
+    background-color: var(--orange);
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 37.5%;
+}
+
+form .message-form{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Roboto-Black";
+    color: rgba(227, 219, 219, 0.6);
+    border: none;
+    outline: none;
+    font-size: small;
+    transition: all ease 0.8s;
+}
+
+form .submit-form{
+    color: var(--white);
+    cursor: pointer;
+}
+
+#error-message{
+    text-align: center;
+    text-shadow: 0 0 9px var(--black);
+    font-weight: 900;
+    font-size: small;
+    font-family: "Oswald-ExtraLight";
+    letter-spacing: 2px;
+}
+
+.contact-info{
+    margin-top: 2rem;
+    padding: 1rem;
+    background: var(--black);
+}
+
+.contact-info p{
+    color: var(--white);
+    font-size: small;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 100;
+}
+
+.contact-info p b{
+    color: var(--orange);
+    font-size: medium;
+    font-weight: 900;
+    font-family: "Rubik-Black";
+}
+
+.made-by{
+    font-family: "Oswald-ExtraLight" !important;
+    font-weight: 100 !important;
+}

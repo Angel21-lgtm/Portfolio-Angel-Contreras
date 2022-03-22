@@ -1,0 +1,47 @@
+#skills:hover .title-skills{
+    color: var(--white);
+}
+
+.isometric div:hover{
+    transform: scale(0.9);
+}
+
+.isometric div:hover .link-isometric{
+    opacity: 1;
+}
+
+@keyframes link-isometric{
+    0%{
+      transform: translateX(0px);
+    }
+    50%{
+      transform: translateX(25px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+}
+
+.currently-studying div:hover{
+    transform: scale(1.1);
+}
+
+@keyframes skills{
+    50%{
+        right: calc(100% - 40px);
+    }
+}
+
+.skills-pro > .skill-item:hover{
+    box-shadow: 0 0 2rem 0.3rem var(--black);
+}
+
+.skills-pro > .skill-item > .img-skill:hover{
+    transform: scale(1.2);
+}
+
+.skills-pro > .skill-item button:hover{
+    color: var(--black);
+    background-color: var(--white);
+    transform: scale(1.1);
+}

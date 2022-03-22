@@ -1,0 +1,151 @@
+/* 300 and 575 pixels */
+@media (min-width: 300px){
+    .title-skills{
+        font-size: 2.5rem;
+    }
+    
+    .title-skills::after{
+        height: 5px;
+    }
+
+    .isometric div .link-isometric p{
+        font-size: medium;
+    }
+
+    .subtitle-skills{
+        width: auto;
+        max-width: 80%;
+        font-size: x-large;
+    }
+
+    .skills-pro > .skill-item p{
+        font-size: large;
+    }
+
+    .skills-pro > .skill-item button{
+        font-size: small;
+        padding: 0.4rem;
+    }
+}
+
+/* 576 and 767 pixels */
+@media (min-width: 576px){
+    .subtitle-skills{
+        font-size: 3rem;
+        margin: 0 0 5rem 0;
+    }
+
+    .subtitle-skills::after{
+        height: 40px;
+        bottom: -50px;
+    }
+
+    .skills-pro > .skill-item p{
+        font-size: x-large;
+    }
+
+    .skills-pro > .skill-item button{
+        font-size: medium;
+    }
+}
+
+/* 768 and 991 pixels */
+@media (min-width: 768px){
+    .title-skills{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 3.5rem;
+    }
+    
+    .title-skills::after{
+        height: 7px;
+    }
+
+    .isometric{
+        flex-wrap: nowrap;
+    }
+
+    .isometric div{
+        max-width: 1200px;
+    }
+
+    .isometric div .link-isometric p{
+        font-size: large;
+    }
+
+    .subtitle-skills{
+        font-size: 2.5rem;
+    }
+
+    .skills-pro > .skill-item{
+        width: 45%;
+        max-width: 600px;
+    }
+}
+
+/* 992 and 1199 pixels */
+@media (min-width: 992px){
+    .title-skills{
+        font-size: 4rem;
+    }
+
+    .isometric div .link-isometric{
+        top: -10%;
+    }
+
+    .isometric div .link-isometric p{
+        font-size: x-large;
+    }
+
+    .skills-pro > .skill-item p{
+        font-size: xx-large;
+    }
+
+    .skills-pro > .skill-item button{
+        font-size: larger;
+    }
+}
+
+/* 1200 and onwards pixels */
+@media (min-width: 1200px ){
+    .title-skills{
+        font-size: 5rem;
+    }
+
+    .title-skills::after{
+        height: 9px;
+    }
+
+    .isometric div .link-isometric{
+        top: -15%;
+    }
+
+    .isometric div .link-isometric p{
+        font-size: xx-large;
+    }
+
+    .subtitle-skills{
+        font-size: 3rem;
+        border-bottom: solid 7px var(--orange);
+        margin: 0 0 6rem 0;
+    }
+
+    .subtitle-skills::after{
+        width: 50px;
+        height: 50px;
+        bottom: -65px;
+    }
+
+    .currently-studying div{
+        max-width: 300px;
+    }
+
+    .skills-pro > .skill-item > .img-skill{
+        max-width: 150px;
+    }
+
+    .skills-pro > .skill-item button{
+        font-size: x-large;
+        padding: 0.5rem;
+    }
+}

@@ -1,0 +1,56 @@
+#home-logo{
+    right: -5%;
+    top: -15%;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: all ease-out 1.5s;
+    z-index: 10;
+}
+
+#home-logo > a{
+    font-family: "Allison-Regular";
+    font-weight: 100;
+    color: var(--orange);
+    font-size: 2rem;
+}
+
+#static-menu{
+    height: 65px;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding-right: 1.1rem;
+    transition: all ease-out 1.5s;
+    z-index: 10;
+}
+
+#static-menu > ul > li{
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    transition: all ease-in 0.5s;
+}
+
+#static-menu > ul > li > a{
+    font-size: large;
+    font-weight: 100;
+    color: var(--white);
+    text-shadow: 5px 5px 6px var(--black);
+}
+
+/* events */
+.position-logo{
+    right: 7% !important;
+    top: -1% !important;
+    opacity: 1 !important;
+}
+
+.scroll-static-menu{
+    position: fixed;
+    top: 2%;
+    background: rgba(248, 248, 248, 0.5);
+}
+
+.select-option-static-menu{
+    background: var(--orange);
+    border-radius: 1rem;
+    transform: scale(1.2);
+}

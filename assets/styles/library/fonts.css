@@ -1,0 +1,27 @@
+/* font-Allison */
+@font-face{
+    src: url("../../fonts/Allison/Allison-Regular.ttf");
+    font-family: "Allison-Regular";
+}
+
+/* font-Oswald */
+@font-face{
+    src: url("../../fonts/Oswald/Oswald-ExtraLight.ttf");
+    font-family: "Oswald-ExtraLight";
+}
+
+/* font-Roboto */
+@font-face{
+    src: url("../../fonts/Roboto/Roboto-Black.ttf");
+    font-family: "Roboto-Black";
+}
+@font-face{
+    src: url("../../fonts/Roboto/Roboto-Regular.ttf");
+    font-family: "Roboto-Regular";
+}
+
+/* font-Rubik */
+@font-face{
+    src: url("../../fonts/Rubik/Rubik-Black.ttf");
+    font-family: "Rubik-Black";
+}

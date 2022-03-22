@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ángel Contreras | Desarrollador Web Front-End</title>
+    <link rel="shortcut icon" href="./assets/images/icons/title/ángel.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/styles/library/display.css">
+    <link rel="stylesheet" href="./assets/styles/library/flexbox.css">
+    <link rel="stylesheet" href="./assets/styles/library/fonts.css">
+    <link rel="stylesheet" href="./assets/styles/library/positions.css">
+    <link rel="stylesheet" href="./assets/styles/library/width-and-height.css">
+
+    <link rel="stylesheet" href="./assets/styles/adetables/resets.css">
+
+    <link rel="stylesheet" href="./assets/styles/adetables/menu/dropdown-menu/dropdown-menu.css">
+    <link rel="stylesheet" href="./assets/styles/adetables/menu/dropdown-menu/responsive-dropdown-menu.css">
+
+    <link rel="stylesheet" href="./assets/styles/adetables/menu/static-menu/static-menu.css">
+    <link rel="stylesheet" href="./assets/styles/adetables/menu/static-menu/responsive-static-menu.css">
+
+    <link rel="stylesheet" href="./assets/styles/adetables/home/home.css">
+    <link rel="stylesheet" href="./assets/styles/adetables/home/animations-home.css">
+    <link rel="stylesheet" href="./assets/styles/adetables/home/responsive-home.css">
+
+    <link rel="stylesheet" href="./assets/styles/adetables/about/about.css">
+    <link rel="stylesheet" href="./assets/styles/adetables/about/animations-about.css">
+    <link rel="stylesheet" href="./assets/styles/adetables/about/responsive-about.css">
+
+    <link rel="stylesheet" href="./assets/styles/adetables/skills/skills.css">
+    <link rel="stylesheet" href="./assets/styles/adetables/skills/animations-skills.css">
+    <link rel="stylesheet" href="./assets/styles/adetables/skills/responsive-skills.css">
+
+    <link rel="stylesheet" href="./assets/styles/adetables/portfolio/portfolio.css">
+    <link rel="stylesheet" href="./assets/styles/adetables/portfolio/animations-portfolio.css">
+    <link rel="stylesheet" href="./assets/styles/adetables/portfolio/responsive-portfolio.css">
+
+    <link rel="stylesheet" href="./assets/styles/adetables/contact/contact.css">
+    <link rel="stylesheet" href="./assets/styles/adetables/contact/animations-contact.css">
+    <link rel="stylesheet" href="./assets/styles/adetables/contact/responsive-contact.css">
+</head>
+<body>
+
+    <main id="root">
+
+        <!-- home-section -->
+        <header id="home" class="relative">
+            <!-- dropdown-menu -->
+            <div class="image-menu col-w-12 flex justify-start">
+                <div class="col-w-2 button-menu">
+                    <img class="block col-w-12 col-h-12" src="./assets/images/icons/dropdown-menu/menu.svg" alt="Menu icon">
+                </div>
+            </div>
+
+            <nav id="dropdown-menu" class="col-w-12 fixed">
+                <ul class="col-w-12 col-h-12 flex justify-around flex-column">
+                    <li class="flex align-center relative">
+                        <a href="#home" class="select-option-dropdown-menu-color">
+                            Inicio
+                        </a>
+                        <div class="absolute select-option-dropdown-menu">
+                            <img class="col-w-12 col-h-12" src="./assets/images/icons/dropdown-menu/home.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="flex align-center relative">
+                        <a href="#about">
+                            Acerca
+                        </a>
+                        <div class="absolute">
+                            <img class="block col-w-12 col-h-12" src="./assets/images/icons/dropdown-menu/about.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="flex align-center relative">
+                        <a href="#skills">
+                            Habilidades
+                        </a>
+                        <div class="absolute">
+                            <img class="col-w-12 col-h-12" src="./assets/images/icons/dropdown-menu/skills.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="flex align-center relative">
+                        <a href="#portfolio">
+                            Portafolio
+                        </a>
+                        <div class="absolute">
+                            <img class="col-w-12 col-h-12" src="./assets/images/icons/dropdown-menu/portfolio.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="flex align-center relative">
+                        <a href="#contact">
+                            Contacto
+                        </a>
+                        <div class="absolute">
+                            <img class="col-w-12 col-h-12" src="./assets/images/icons/dropdown-menu/contact.svg" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- dropdown-menu -->
+
+            <div class="absolute fixed" id="home-logo">
+                <a href="#">
+                    Ángel...
+                </a>
+            </div>
+
+            <!-- static-menu -->
+            <nav class="none align-center" id="static-menu">
+                <ul class="flex">
+                    <li class="select-option-static-menu">
+                        <a href="#home">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            Acerca
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills">
+                            Habilidades
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">
+                            Portafolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- static-menu -->
+
+            <!-- home -->
+            <div class="home col-w-12 flex flex-column justify-center align-center">
+                <div class="flex justify-center align-center flex-column">
+                    <h1 class="flex justify-center align-center"></h1>
+                    <div>
+                        <button id="active-title">On</button>
+                        <button id="active-title" class="button-title-two none">Off</button>
+                    </div>
+                    <h2 class="col-w-11">!Desarrollador Web <span class="inline-block">Front-End!</span></h2>
+                    <a id="cv" href="./assets/cv/Miguel Ángel Contreras Osorio.pdf" download="Miguel Ángel Contreras Osorio.pdf">
+                        Descargar CV
+                    </a>
+                </div>
+
+                <nav id="nav-social" class="col-w-12 flex justify-center">
+                    <ul class="col-w-12 flex justify-between">
+                    </ul>
+                </nav>
+            </div>
+            <!-- home -->
+
+            <!-- sections-content-description -->
+            <section style="background-color: aqua; margin: auto;" class="col-w-11 flex justify-around">
+            </section>
+            <!-- sections-content-description -->
+
+            <div class="svg col-w-12 absolute">
+                <svg class="wave absolute" fill="rgb(0, 0, 0, 0.2)" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve">
+                    <path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path>
+                </svg>
+            </div>
+        </header>
+        <!-- home-section -->
+
+        <!-- about-section -->
+        <section id="about" class="flex flex-column align-center">
+            <h2 class="title-about relative">Acerca de Mi</h2>
+            <div class="content-section-about relative col-w-11 flex flex-column align-start justify-center">
+                <p class="who-i-am">¿Quién soy?</p>
+                <h2 class="flex justify-center align-center">Ángel Contreras</h2>
+                <h3>Desarrollador Web Profesional</h3>
+                <p class="text-about-me">
+                    Soy una persona enfocada en el desarrollo web y de software, 
+                    amante por la tecnología y también una persona enfocada en 
+                    adquirir nuevas habilidades y superar las ya adquiridas.
+                    Actualmente me encuentro estudiando las librerías: React.js y Bootstrap,
+                    que son tecnologías enfocadas principalmente en el desarrollo web, aparte de 
+                    estar estudiando Node.js, que es Javascript del lado del servidor para 
+                    poder hacer un Back-End perfecto y sin fallas de seguridad.
+                </p>
+
+                <div class="col-w-11 flex justify-center align-center align-self-center">
+                    <div id="photo" class="photo relative col-w-12">
+                        <div class="zoom-my-photo col-w-12 col-h-12 fixed">
+                            <img class="col-w-12 col-h-12" src="./assets/images/photos/about/my-photo.jpg" alt="My photo">
+                        </div>
+                        <button id="close-photo" class="fixed">
+                            <img class="col-w-12 col-h-12" src="./assets/images/icons/about/close-menu.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="text-about-me-content-sections align-self-center flex flex-column justify-center col-w-11 relative">
+                    <div class="text-about-me-sections flex align-center justify-center relative col-w-12">
+                        <p>
+                            <b class="inline-block">1.- ¡Hola!</b><br>
+                            Mi nombre completo es Miguel Ángel Contreras Osorio.<br>
+                            ¡Bienvenidos a mi sitio web personal tipo portafolio!
+                            En el encontrarán todos mis proyectos, webs y videojuegos (web, de escritorio y móviles).<br>
+                            Tambien pueden visitar mi perfil de GitHub donde encontrarán todo el código fuente del proyecto, 
+                            aparte de visitar mi perfil de Codepen, donde me dedico a hacer "Arte en CSS3 y Javascript" (animaciones
+                            y algunos pequeños programas de interactividad).<br>
+                            También no olvides seguirme en Instagram, Facebook, Twitter y Tik-Tok, donde estaré subiendo contenido 
+                            con respecto a la programación, informática y la tecnología actual. Tampoco olvides dejar tu 
+                            like a mi contenido.
+                        </p>
+                        <p>
+                            <b class="inline-block">2.- ¡Mis proyectos!</b><br>
+                            Los proyectos que tengo realizados hasta al momento son muy pocos,
+                            ya que apenas soy un estudiante que trata de llegar al nivel "Senior" en
+                            la programación. <br>
+                            Este portafolio web es mi primer proyecto real echo en código nativo y sin 
+                            librerías, frameworks y ninguna otra tecnología.
+                            Los lenguajes empleados en este sitio web son: HTML5, CSS3 y Javascript ES6 al más reciente.<br>
+                            Los próximos proyectos que tengo pensados realizar son: un blog para este sitio web (mi portafolio web), 
+                            un sitio web de videojuegos online echo con Ract.js, Node.js, Bootstrap y SQL para poder registrarse en la web y 
+                            poder guardar tu progreso en el videojuego que se esté jugando o los videojuegos que se estén jugando.<br>
+                            Los proyectos que se encontrarán en la sección "Portafolio" son muy pocos y muy sencillos.
+                        </p>
+                        <p>
+                            <b class="inline-block">3.- ¡Soy un Desarrollador Web!</b><br>
+                            Antes de llegar al hámbito de la programación primero me estaba dedicando
+                            al hámbito de la seguridad informática y hacking ético en Kali Linux, aparte de 
+                            manejar distintas distibuciones de Linux, como; Ubuntu, Debian, etc... Cuando quería seguir avanzando 
+                            empecé con mi primer lenguaje de programación, el cual es C#, con este lenguaje quería dedicarme
+                            al desarrollo de videojuegos y aplicaciones de escritorio, aparte de hacer un buen Back-End 
+                            en este lenguaje y cuando me estaba adentrando en las auditorías de páginas web me encontré con Javascript.<br>
+                            Primero empecé por HTML5, luego CSS3 y actualmente me encuentro tratando de dominar Javascript y tratar de saberlo 
+                            al menos casi al 100%. ¡Me enamoré de este lenguaje de programación!
+                        </p>
+                        <p>
+                            <b class="inline-block">4.- ¡Desarrollo de Videojuegos!</b><br>
+                            Estoy tratando de enfocarme también al desarrollo de videojuegos, 
+                            principalmente empezar por los videojuegos web, luego los juegos de escritorio y de consola,
+                            y por último los videojuegos móviles. Para poder dominar esta rama del desarrollo de software 
+                            estoy tratando de estudiar bien lo que es C#, Python y Unity (cuando acabe de estudar a fondo Javascript, Node y React) 
+                            y crear videojuegos de muy buena calidad, con gráficos excepcionales y una jugabilidad excelente.<br>
+                            También estoy estudiando lo que son las redes de computadoras para poder hacer 
+                            un buen Back-End :b .
+                        </p>
+                        <p>
+                            <b class="inline-block">5.- ¡Mi trabajo!</b><br>
+                            Mi trabajo actualmente se basa en el desarrollo web del lado del cliente
+                            (Front-End) con algo de experiencia en el diseño UI and UX que actualmente me encuentro estudiando, 
+                            en un futuro dominaré el Back-End para convertirme en Desarrollador Web Full-Stack,
+                            dominando las tecnologías que son: JS; React.js, Node.js, Express.js, CSS3; Bootstrap, HTML5, SQL; PostgreSQL, MongoDB, 
+                            Python3 (del lado del servidor) y C# (del lado del servidor).<br>
+                            Las ramas que también estoy tratando de dominar son: el desarrollo de videojuegos (web, de escritorio, de consola y móviles), 
+                            desarrollo de aplicaciones (web, de escritorio y móviles), consultor de bases de datos, experto en redes de 
+                            computadoras, desarrollo de IA (Inteligencia Artificial) en Python y experto en sistemas Linux.
+                        </p>
+                        <p>
+                            <b class="inline-block">6.- ¡Lenguajes Dominantes!</b><br>
+                            Próximamente...
+                        </p>
+                    </div>
+                    <button id="left-arrow" class="col-w-4 none absolute">
+                        <img class="col-w-12 col-h-12" src="./assets//images//icons//about/about-arrow/left.png" alt="left-arrow">
+                    </button>
+                    <button id="right-arrow" class="col-w-4 absolute">
+                        <img class="col-w-12 col-h-12" src="./assets//images//icons//about/about-arrow/right.png" alt="right-arrow">
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="svg col-w-12 relative">
+                <svg class="wave absolute" fill="#dadada" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve">
+                    <path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path>
+                </svg>
+            </div>
+
+        </section>
+        <!-- about-section -->
+
+        <!-- skills-section -->
+        <section id="skills" class="flex flex-column align-center">
+
+            <h2 class="title-skills relative col-w-11">Habilidades</h2>
+
+            <div class="isometric col-w-11 flex justify-center flex-wrap">
+            </div>
+
+            <h3 class="subtitle-skills col-w-10 relative">Actualmente Estudiando</h3>
+
+            <div class="currently-studying col-w-10 flex flex-wrap justify-center">
+            </div>
+
+            <h3 class="subtitle-skills col-w-10 relative">Habilidades Adquiridas</h3>
+
+            <section class="skills-pro col-w-11 flex flex-wrap justify-evenly">
+            </section>
+
+        </section>
+        <!-- skills-section -->
+
+        <!-- portfolio-section -->
+        <section id="portfolio" class="flex flex-column justify-start align-center">
+            <h2 class="title-portfolio relative">Portafolio</h2>
+
+            <nav class="nav-sections-projects col-w-10 flex flex-wrap justify-center align-center">
+            </nav>
+
+            <section id="webs-section-projects" class="col-w-11 flex flex-wrap justify-around">
+            </section>
+
+            <section id="games-section-projects" class="col-w-11 flex flex-wrap justify-around">
+            </section>
+
+            <div class="svg col-w-12">
+                <svg class="wave absolute" fill="#dadada" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve">
+                    <path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path>
+                </svg>
+            </div>
+
+        </section>
+        <!-- portfolio-section -->
+
+        <!-- contact-section -->
+        <footer class="flex flex-column justify-start align-center" id="contact">
+            <h2 class="title-contact relative">Contacto</h2>
+            <div id="form-container" class="col-w-11">
+            </div>
+            <p id="error-message" class="col-w-10"></p>
+
+            <div class="contact-info col-w-12 flex flex-wrap justify-center align-center">
+                <p class="col-w-11">
+                    <b class="block">Teléfono: </b>+52 1 55 6634 4355
+                </p>
+                <p class="col-w-11">
+                    <b class="block">Dirección: </b>
+                    Carretera México-Toluca Km. 30 Colonia La Pila, Cuajimalpa de Morelos, Ciudad de México, C.P 05750
+                </p>
+                <p class="col-w-11">
+                    <b class="block">Correo electrónico:</b>mc603452@gmail.com
+                </p>
+                <p class="made-by col-w-11">Echo por Miguel Ángel Contreras Osorio 22/03/2022 ©</p>
+            </div>
+        </footer>
+        <!-- contact-section -->
+
+    </main>
+
+    <script src="./assets/scripts/javascript/main.js" type="module"></script>
+    
+</body>
+</html>

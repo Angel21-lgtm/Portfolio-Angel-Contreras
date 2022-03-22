@@ -1,0 +1,38 @@
+/* 300 and 575 pixels */
+@media (min-width: 300px){
+    #dropdown-menu > ul > li > a{
+        font-size: x-large;
+        text-shadow: 0 0 6px var(--black);
+    }
+
+    #dropdown-menu > ul > li > div{
+        height: 55px;
+        width: 55px;
+        box-shadow: 0 0 7px var(--black);
+    }
+}
+
+/* 576 and 767 pixels */
+@media (min-width: 576px){
+    #dropdown-menu > ul > li > a{
+        font-size: xx-large;
+        text-shadow: 0 0 8px var(--black);
+    }
+
+    #dropdown-menu > ul > li > div{
+        height: 65px;
+        width: 65px;
+        box-shadow: 0 0 10px var(--black);
+    }
+}
+
+/* 768 and 991 pixels */
+@media (min-width: 768px){
+    .image-menu{
+        display: none;
+    }
+
+    #dropdown-menu{
+        display: none;
+    }
+}

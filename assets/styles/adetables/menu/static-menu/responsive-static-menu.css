@@ -1,0 +1,66 @@
+/* 300 and 575 pixels */
+@media (min-width: 300px){
+    #home-logo > a{
+        font-size: 2.5rem;
+    }
+
+    .position-logo{
+        top: -1.5% !important;
+    }
+}
+
+/* 576 and 767 pixels */
+@media (min-width: 576px){
+
+}
+
+/* 768 and 991 pixels */
+@media (min-width: 768px){
+    #home-logo > a{
+        font-size: 4rem;
+    }
+
+    .position-logo{
+        right: 7% !important;
+        top: 0 !important;
+    }
+
+    #static-menu{
+        display: flex;
+    }
+}
+
+/* 992 and 1199 pixels */
+@media (min-width: 992px){
+    #home-logo > a{
+        font-size: 5rem;
+    }
+
+    #static-menu{
+        height: 75px;
+    }
+
+    #static-menu > ul > li{
+        margin-left: 1.5rem;
+    }
+
+    #static-menu > ul > li > a{
+        font-size: x-large;
+    }
+}
+
+/* 1200 and onwards pixels */
+@media (min-width: 1200px ){
+    #static-menu{
+        height: 85px;
+    }
+
+    #static-menu > ul > li > a{
+        font-size: 1.7rem;
+    }
+
+    /* events */
+    .select-option-static-menu{
+        border-radius: 1.2rem;
+    }
+}
