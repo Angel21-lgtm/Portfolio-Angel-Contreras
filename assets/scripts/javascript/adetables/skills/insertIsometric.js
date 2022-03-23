@@ -6,7 +6,7 @@ const insertIsometric = (containerId) => {
             src: "./assets/images/photos/skills/Designer_Isometric.svg", 
             alt: "Designer isometric",
             id: "designer-isometric",
-            url: "",
+            url: "https://www.youtube.com/watch?v=sAZ2A1bztwQ",
             text: "¡Da click en la imagen para saber más de UI and UX Design!",
         },
         {

@@ -33,14 +33,14 @@ const navSocial = (idContainer) => {
         {
             src: "./assets/images/icons/home/social-icon/tiktok.svg",
             alt: "TikTok",
-            url: "",
+            url: "https://www.tiktok.com/@angelcontreras9951?lang=es",
             classInfo: "social-media",
             id: "tiktok",
         },
         {
             src: "./assets/images/icons/home/social-icon/twitter.svg",
             alt: "Twitter",
-            url: "",
+            url: "https://twitter.com/AngelWebDevelop",
             classInfo: "social-media",
             id: "twitter",
         },

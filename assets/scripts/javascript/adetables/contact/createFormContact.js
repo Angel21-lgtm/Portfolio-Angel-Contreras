@@ -33,6 +33,7 @@ const createFormContainer = (idContainer, errorMessage) => {
 
     // create form
     const formContainer = form.createForm("", ["col-w-12", "flex", "flex-wrap", "justify-between", "align-center"], "get", "off", "");
+          formContainer.setAttribute("netlify", "");
 
     // input info
     const itemInfo = [
@@ -78,7 +79,7 @@ const createFormContainer = (idContainer, errorMessage) => {
         `;
         if(itemPosition === 2){
             htmlFragment += `
-                <p id="message" class="message-form col-w-12" contenteditable="true" id="">Tu Mensaje</p>
+                <textarea id="message" class="message-form col-w-12" placeholder="Tu Mensaje" name="message" value=""></textarea>
             `;
         }
     });
@@ -129,11 +130,11 @@ const createFormContainer = (idContainer, errorMessage) => {
                     return errorMessage.innerHTML = "Se debe de poner un asunto mayor a 5 carácteres y menor a 50 carácteres.<br>";
                 }
             }else if(formChildren[i].id === "message"){
-                if(formChildren[i].textContent != "" && (formChildren[i].textContent.length > 10 && formChildren[i].textContent.length < 600)){
-                    values.messageForm = formChildren[i].textContent;
+                if(formChildren[i].value != "" && (formChildren[i].value.length > 10 && formChildren[i].value.length < 600)){
+                    values.messageForm = formChildren[i].value;
                     errorMessage.innerHTML = "";
                 }else{
-                    formChildren[i].textContent = "";
+                    formChildren[i].value = "";
                     values.messageForm = "";
                     errorMessage.style.color = "rgb(255, 247, 247)";
                     return errorMessage.innerHTML = "Se debe de poner un mensaje mayor a 10 carácteres y menor a 600 carácteres.<br>";
@@ -144,9 +145,7 @@ const createFormContainer = (idContainer, errorMessage) => {
         errorMessage.style.color = "black";
 
         for(let i = 0; i < formChildren.length; i++){
-            if(formChildren[i].id === "message"){
-                formChildren[i].textContent = "Tu Mensaje";
-            }else if(formChildren[i].id === itemInfo[3].id){
+            if(formChildren[i].id === itemInfo[3].id){
                 itemInfo[3].value = itemInfo[3].value;
             }else{
                 formChildren[i].value = "";

@@ -9,11 +9,15 @@ darme crédito por los proyectos realizados.
 Para poder descargar mi portafolio e inspeccionar su código
 debes de escribir el siguiente comando:
 
-# sudo apt update -y && sudo apt upgrade -y && sudo apt install git nano && git clone https://github.com/Angel21-lgtm/Portafolio
+# sudo apt update -y && sudo apt upgrade -y && sudo apt install git nano && git clone https://github.com/Angel21-lgtm/Portfolio-Angel-Contreras
 
 Puedes inspeccionar el proyecto con cualquier editor de código:
 
-# cd Portafolio
+# cd Portfolio-Angel-Contreras
 # nano index.html
 
 También puedes observar este proyecto directamente desde su página web: 
+
+# https://angel-contreras.netlify.app/
+
+Pendiente programación de formulario y links de proyectos...

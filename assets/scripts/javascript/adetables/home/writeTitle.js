@@ -43,4 +43,6 @@ const writeTitle = (text, idName, buttonOne, buttonTwo) => {
     `;
 }
 
-export { writeTitle };
+export { 
+    writeTitle 
+}
