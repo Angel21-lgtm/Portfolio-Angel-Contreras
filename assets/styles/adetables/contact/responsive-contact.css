@@ -103,6 +103,10 @@
         height: 9px;
     }
 
+    form{
+        max-width: 1068px;
+    }
+
     form input{
         font-size: xx-large;
     }

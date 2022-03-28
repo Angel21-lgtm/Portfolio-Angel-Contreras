@@ -8,13 +8,18 @@ import { scrollMenuFixed } from "./library/scroll.js";
 
 // dropdown-menu
 import { selectOptionDropdownMenu } from "./adetables/menu/dropdown-menu/selectOptionDropdownMenu.js";
+import { scrollSectionDropdownMenu } from "./adetables/menu/dropdown-menu/scrollSectionDropdownMenu.js";
 
 // static-menu
+import { insertItemStaticMenu } from "./adetables/menu/static-menu/insertItemStaticMenu.js";
 import { selectOptionStaticMenu } from "./adetables/menu/static-menu/selectOptionStaticMenu.js";
+import { selectIcon } from "./adetables/menu/static-menu/selectIcon.js";
+import { scrollSectionStaticMenu } from "./adetables/menu/static-menu/scrollSectionStaticMenu.js";
 
 // home
 import { writeTitle } from "./adetables/home/writeTitle.js";
 import { clickCv } from "./adetables/home/clickCv.js";
+import { clickRepoPortfolio } from "./adetables/home/clickRepoPortfolio.js";
 import { navSocial } from "./adetables/home/navSocial.js";
 
 // about
@@ -64,6 +69,8 @@ const main = function(root){
     const cv = document.getElementById("cv"),
           classCv = "cv";
 
+    const repPortfolio = document.querySelector(".repo-portfolio");
+
     const navSocialContainer = document.getElementById("nav-social");
     
     // about
@@ -93,20 +100,26 @@ const main = function(root){
     const selectSection = "select-section";
 
     // contact
-    const formContainer = document.getElementById("form-container"),
+    const formContainer = document.getElementById("form"),
+          submit = document.getElementById("submit"),
           errorMessage = document.getElementById("error-message");
 
     return `
         ${dropdown(styleDropdownMenu, buttonMenu, dropdownMenu)}
         ${scrollMenuFixed(imgMenu, scrollImageDropdownMenu)}
         ${selectOptionDropdownMenu(styleOneSelectOptionDropdownMenu, styleTwoSelectOprtionDropdownMenu, styleDropdownMenu, dropdownMenu)}
+        ${scrollSectionDropdownMenu(dropdownMenu, styleTwoSelectOprtionDropdownMenu, styleOneSelectOptionDropdownMenu)}
 
+        ${insertItemStaticMenu(staticMenu)}
         ${scrollMenuFixed(homeLogo, positionLogo)}
         ${scrollMenuFixed(staticMenu, scrollStaticMenu)}
         ${selectOptionStaticMenu(staticMenu, styleSelectOptionStaticMenu)}
+        ${selectIcon(staticMenu)}
+        ${scrollSectionStaticMenu(staticMenu, styleSelectOptionStaticMenu)}
     
         ${writeTitle(text, title, activeTitle, buttonTitleTwo)}
         ${clickCv(cv, classCv)}
+        ${clickRepoPortfolio(repPortfolio)}
         ${navSocial(navSocialContainer)}
 
         ${textAboutMeSections(textAboutMeSectionsContent, leftArrow, rightArrow)}
@@ -119,6 +132,6 @@ const main = function(root){
         ${insertButtonsPortfolio(navSectionsProjects)}
         ${insertProjects([websSectionProjects, gamesSectionProjects], navSectionsProjects, selectSection)}
 
-        ${createFormContainer(formContainer, errorMessage)}
+        ${createFormContainer(formContainer, submit, errorMessage)}
         `;
 }(root);

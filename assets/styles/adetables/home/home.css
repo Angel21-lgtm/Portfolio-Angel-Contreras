@@ -5,8 +5,10 @@
 .home > div > h1{
     margin: 2.5rem 0 1.5rem 0;
     background-color: rgba(245, 234, 234, 0.3);
+    box-shadow: 0 0 1rem 0.2rem var(--black);
     padding: 0.5rem 1rem;
     border-radius: 2rem;
+    letter-spacing: 2px;
 }
 
 .home > div > div > button{
@@ -14,8 +16,8 @@
     margin-bottom: 1.5rem;
     padding: 0.5rem 1rem;
     background-color: transparent;
-    color: var(--white);
-    opacity: 0.8;
+    color: var(--aqua);
+    border: 3px solid var(--aqua);
     transition: all ease 0.5s;
 }
 
@@ -32,12 +34,24 @@
     padding: 1rem 0.5rem;
     margin-top: 4rem;
     margin-bottom: 3rem;
-    background-color: transparent;
-    border-radius: 1rem;
+    border: 4px solid var(--aqua);
     font-family: 'Montserrat', sans-serif;
     box-shadow: 0 0 1rem 0.2rem var(--black);
     font-size: small;
     font-weight: 900;
+    color: var(--aqua);
+    letter-spacing: 3px;
+    transition: all ease-in-out 0.5s;
+}
+
+.home > div > button{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 4px solid var(--aqua);
+    background-color: var(--body);
+    color: var(--aqua);
+    box-shadow: 0 0 1rem 0.2rem var(--black);
+    letter-spacing: 3px;
     transition: all ease-in-out 0.5s;
 }
 
@@ -73,9 +87,7 @@
 
 /* events */
 .cv{
-    background-color: var(--orange) !important;
     text-shadow: 5px 5px 6px var(--black);
-    border-radius: 3rem !important;
     color: var(--white) !important;
     box-shadow: none !important;
 }

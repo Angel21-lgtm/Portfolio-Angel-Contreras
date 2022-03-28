@@ -66,7 +66,7 @@
     }
 
     .isometric div{
-        max-width: 1200px;
+        max-width: 495px;
     }
 
     .isometric div .link-isometric p{
@@ -79,7 +79,6 @@
 
     .skills-pro > .skill-item{
         width: 45%;
-        max-width: 600px;
     }
 }
 
@@ -137,11 +136,11 @@
     }
 
     .currently-studying div{
-        max-width: 300px;
+        max-width: 268px;
     }
 
     .skills-pro > .skill-item > .img-skill{
-        max-width: 150px;
+        max-width: 149px;
     }
 
     .skills-pro > .skill-item button{

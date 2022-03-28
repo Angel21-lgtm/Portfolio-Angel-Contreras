@@ -59,7 +59,7 @@
 }
 
 #about > .content-section-about > div > .photo{
-    background: var(--black-img), url("../../../images/photos/about/my-photo.jpg");
+    background: var(--black-img), url("../../../images/photos/about/photo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

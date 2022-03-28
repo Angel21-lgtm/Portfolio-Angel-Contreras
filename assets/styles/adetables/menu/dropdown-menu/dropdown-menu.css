@@ -12,7 +12,7 @@
 
 #dropdown-menu{
     height: calc(100vh - 50px);
-    background: var(--amy-crisp);
+    background: var(--white-da);
     overflow: hidden;
     left: -100%;
     bottom: 0;
@@ -24,6 +24,7 @@
     padding: 0.5rem 0 0.5rem 1rem;
     text-shadow: 0 0 4px var(--black);
     transition: all ease-in 0.3s;
+    color: var(--body);
 }
 
 #dropdown-menu > ul > li > div{
@@ -40,12 +41,13 @@
 .scroll-image-dropdown-menu{
     position: fixed;
     top: 0;
-    background: var(--white);
-    opacity: 0.8;
+    background: var(--white-da);
+
 }
 
 .active-dropdown-menu{
     left: 0 !important;
+    opacity: 0.9;
 }
 
 .select-option-dropdown-menu{

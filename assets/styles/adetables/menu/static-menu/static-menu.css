@@ -25,7 +25,7 @@
 
 #static-menu > ul > li{
     padding: 0.5rem;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
     transition: all ease-in 0.5s;
 }
 
@@ -33,7 +33,20 @@
     font-size: large;
     font-weight: 100;
     color: var(--white);
-    text-shadow: 5px 5px 6px var(--black);
+    text-shadow: 0 0 9px var(--black);
+}
+
+#static-menu > ul > li > #select{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    left: 0;
+    bottom: -55px;
+    z-index: 10;
+    border: 9px solid var(--body);
+    transition: all ease-out 0.5s;
+    padding: 0.5rem;
 }
 
 /* events */
@@ -46,7 +59,12 @@
 .scroll-static-menu{
     position: fixed;
     top: 2%;
-    background: rgba(248, 248, 248, 0.5);
+    background: var(--white-da);
+    box-shadow: 0 0 1rem 0 var(--black);
+}
+
+.scroll-static-menu ul li a{
+    color: var(--black) !important;
 }
 
 .select-option-static-menu{

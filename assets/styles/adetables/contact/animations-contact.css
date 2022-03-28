@@ -11,3 +11,9 @@ form .message-form:hover{
     color: var(--black);
     background-color: var(--white-da);
 }
+
+form .submit-form:hover{
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white)
+}

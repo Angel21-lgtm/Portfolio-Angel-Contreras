@@ -34,8 +34,10 @@ form .message-form{
 }
 
 form .submit-form{
-    color: var(--white);
+    color: var(--aqua);
     cursor: pointer;
+    background-color: transparent;
+    border: 3px solid var(--aqua);
 }
 
 #error-message{

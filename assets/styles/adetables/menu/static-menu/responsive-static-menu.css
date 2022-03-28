@@ -21,7 +21,7 @@
     }
 
     .position-logo{
-        right: 7% !important;
+        right: 1% !important;
         top: 0 !important;
     }
 
@@ -32,35 +32,18 @@
 
 /* 992 and 1199 pixels */
 @media (min-width: 992px){
-    #home-logo > a{
-        font-size: 5rem;
+    .position-logo{
+        right: 5% !important;
     }
 
     #static-menu{
         height: 75px;
     }
-
-    #static-menu > ul > li{
-        margin-left: 1.5rem;
-    }
-
-    #static-menu > ul > li > a{
-        font-size: x-large;
-    }
 }
 
 /* 1200 and onwards pixels */
 @media (min-width: 1200px ){
-    #static-menu{
-        height: 85px;
-    }
-
     #static-menu > ul > li > a{
-        font-size: 1.7rem;
-    }
-
-    /* events */
-    .select-option-static-menu{
-        border-radius: 1.2rem;
+        font-size: x-large;
     }
 }

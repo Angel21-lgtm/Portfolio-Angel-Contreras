@@ -1,7 +1,7 @@
 .home > div > div > button:hover{
     opacity: 1;
-    background: var(--warm-flame);
-    color: var(--black);
+    color: var(--white);
+    border-color: var(--white);
     transition: all ease 0.5s;
 }
 

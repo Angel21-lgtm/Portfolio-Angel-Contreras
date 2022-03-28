@@ -87,7 +87,7 @@
 
 .skills-pro > .skill-item{
     margin-bottom: 3rem;
-    max-width: 550px;
+    max-width: 480px;
     background: var(--black-img);
     border-radius: 1rem;
     padding: 1rem;
@@ -122,8 +122,11 @@
 .skills-pro > .skill-item button{
     padding: 0.3rem;
     border-radius: 0.5rem;
-    color: var(--white);
-    background: var(--amy-crisp);
+    color: var(--aqua);
+    background: transparent;
+    border: 3px solid var(--aqua);
+    letter-spacing: 2px;
     box-shadow: none;
     font-size: x-small;
+    transition: all ease 0.3s;
 }

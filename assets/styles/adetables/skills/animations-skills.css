@@ -34,14 +34,11 @@
 
 .skills-pro > .skill-item:hover{
     box-shadow: 0 0 2rem 0.3rem var(--black);
-}
-
-.skills-pro > .skill-item > .img-skill:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .skills-pro > .skill-item button:hover{
-    color: var(--black);
-    background-color: var(--white);
+    color: var(--white);
+    border-color: var(--white);
     transform: scale(1.1);
 }

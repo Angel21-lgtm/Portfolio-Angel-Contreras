@@ -1,45 +1,11 @@
 "use strict";
 
-const createFormContainer = (idContainer, errorMessage) => {
-    class form{
-        constructor(id, classList, method, autocomplete, action){
-            this.id = id;
-            this.classList = classList;
-            this.method = method;
-            this.autocomplete = autocomplete;
-            this.action = action;
-        }
-        static createForm(id, classListString, method, autocomplete, action){
-            this.id = id;
-            this.classList = classListString;
-            this.method = method;
-            this.autocomplete = autocomplete;
-            this.action = action;
-
-            const form = document.createElement("FORM");
-
-            form.id = id,
-            form.method = method,
-            form.autocomplete = autocomplete,
-            form.action = action;
-
-            classListString.forEach(item => {
-                form.classList.add(item);
-            });
-
-            return form;
-        }
-    }
-
-    // create form
-    const formContainer = form.createForm("", ["col-w-12", "flex", "flex-wrap", "justify-between", "align-center"], "get", "off", "");
-          formContainer.setAttribute("netlify", "");
+const createFormContainer = (idContainer, submit, errorMessage) => {
 
     // input info
     const itemInfo = [
         {
             id: "name",
-            classList: "name-form col-w-12",
             type: "text",
             placeholder: "Nombre",
             name: "name",
@@ -47,7 +13,6 @@ const createFormContainer = (idContainer, errorMessage) => {
         },
         {
             id: "email",
-            classList: "email-form col-w-12",
             type: "email",
             placeholder: "Correo",
             name: "email",
@@ -55,7 +20,6 @@ const createFormContainer = (idContainer, errorMessage) => {
         },
         {
             id: "subject",
-            classList: "col-w-12",
             type: "text",
             placeholder: "Asunto",
             name: "subject",
@@ -63,7 +27,6 @@ const createFormContainer = (idContainer, errorMessage) => {
         },
         {
             id: "submit",
-            classList: "submit-form",
             type: "submit",
             placeholder: "Enviar",
             name: "submit",
@@ -71,28 +34,10 @@ const createFormContainer = (idContainer, errorMessage) => {
         },
     ];
 
-    let htmlFragment = "";
-
-    itemInfo.forEach((item, itemPosition) => {
-        htmlFragment += `
-        <input id="${item.id}" class="${item.classList}" type="${item.type}" placeholder="${item.placeholder}" name="${item.name}" value="${item.value}">
-        `;
-        if(itemPosition === 2){
-            htmlFragment += `
-                <textarea id="message" class="message-form col-w-12" placeholder="Tu Mensaje" name="message" value=""></textarea>
-            `;
-        }
-    });
-
-    formContainer.innerHTML = htmlFragment;
-    idContainer.appendChild(formContainer);
-
     // form action
-    const  formChildren = formContainer.children;
+    const  formChildren = idContainer.children;
     
     const values = [];
-
-    const submit = document.getElementById("submit");
 
     submit.addEventListener("click", e => {
         e.preventDefault();
@@ -115,7 +60,7 @@ const createFormContainer = (idContainer, errorMessage) => {
                     values.emailForm = formChildren[i].value;
                 }else{
                     formChildren[i].value = "";
-                    errorMessage.style.color = "rgb(255, 247, 247)";
+                    errorMessage.style.color = "var(--white)";
                     return errorMessage.innerHTML = "El correo debe de contener \"@\" y \".\" .<br>";
                 }
             }else if(formChildren[i].id === itemInfo[2].id){
@@ -126,7 +71,7 @@ const createFormContainer = (idContainer, errorMessage) => {
                 else{
                     formChildren[i].value = "";
                     values.subjectForm = "";
-                    errorMessage.style.color = "rgb(255, 247, 247)";
+                    errorMessage.style.color = "var(--white)";
                     return errorMessage.innerHTML = "Se debe de poner un asunto mayor a 5 carácteres y menor a 50 carácteres.<br>";
                 }
             }else if(formChildren[i].id === "message"){
@@ -136,7 +81,7 @@ const createFormContainer = (idContainer, errorMessage) => {
                 }else{
                     formChildren[i].value = "";
                     values.messageForm = "";
-                    errorMessage.style.color = "rgb(255, 247, 247)";
+                    errorMessage.style.color = "var(--white)";
                     return errorMessage.innerHTML = "Se debe de poner un mensaje mayor a 10 carácteres y menor a 600 carácteres.<br>";
                 }
             }
@@ -152,17 +97,18 @@ const createFormContainer = (idContainer, errorMessage) => {
             }
         }
 
-        const confirm = window.confirm(`¿Son correctos tus datos? Nombre: ${values.nameForm}, Correo: ${values.emailForm}, Asunto: ${values.subjectForm}, Mensaje: ${values.messageForm}`);
+        const confirm = window.confirm(`¿Son correctos tus datos?\nNombre: ${values.nameForm}\nCorreo: ${values.emailForm}\nAsunto: ${values.subjectForm}\nMensaje: ${values.messageForm}`);
 
         if(confirm){
-            return `
-                ${errorMessage.innerHTML = "Mensaje enviado correctamente.<br>"}
-            `;
+            errorMessage.style.color = "var(--aqua)";
+            errorMessage.innerHTML = "Mensaje enviado correctamente.<br>";
+            return e.defaultPrevented();
         }else{
             values.nameForm = "",
             values.emailForm = "",
             values.subjectForm = "",
             values.messageForm = "";
+            errorMessage.style.color = "var(--aqua)";
             return `
                 ${errorMessage.innerHTML = "Vuelve a escribir el mensaje con los datos correctos.<br>"}
             `;
