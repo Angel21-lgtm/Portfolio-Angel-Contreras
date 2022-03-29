@@ -51,7 +51,8 @@ const createFormContainer = (idContainer, submit, errorMessage) => {
                     values.nameForm = "",
                     formChildren[i].value = "";
                     errorMessage.style.color = "rgb(255, 247, 247)";
-                    return errorMessage.innerHTML = "El nombre debe contener al menos 10 carácteres.<br>";
+                     errorMessage.innerHTML = "El nombre debe contener al menos 10 carácteres.<br>";
+                     return e.preventDefault();
                 }
             }else if(formChildren[i].id === itemInfo[1].id){
                 if(formChildren[i].value.includes("@") && formChildren[i].value.includes(".")){
@@ -60,7 +61,8 @@ const createFormContainer = (idContainer, submit, errorMessage) => {
                 }else{
                     formChildren[i].value = "";
                     errorMessage.style.color = "var(--white)";
-                    return errorMessage.innerHTML = "El correo debe de contener \"@\" y \".\" .<br>";
+                    errorMessage.innerHTML = "El correo debe de contener \"@\" y \".\" .<br>";
+                    return e.preventDefault();
                 }
             }else if(formChildren[i].id === itemInfo[2].id){
                 if(formChildren[i].value != "" && (formChildren[i].value.length > 5 && formChildren[i].value.length < 50)){
@@ -71,7 +73,8 @@ const createFormContainer = (idContainer, submit, errorMessage) => {
                     formChildren[i].value = "";
                     values.subjectForm = "";
                     errorMessage.style.color = "var(--white)";
-                    return errorMessage.innerHTML = "Se debe de poner un asunto mayor a 5 carácteres y menor a 50 carácteres.<br>";
+                    errorMessage.innerHTML = "Se debe de poner un asunto mayor a 5 carácteres y menor a 50 carácteres.<br>";
+                    return e.preventDefault();
                 }
             }else if(formChildren[i].id === "message"){
                 if(formChildren[i].value != "" && (formChildren[i].value.length > 10 && formChildren[i].value.length < 600)){
@@ -81,7 +84,8 @@ const createFormContainer = (idContainer, submit, errorMessage) => {
                     formChildren[i].value = "";
                     values.messageForm = "";
                     errorMessage.style.color = "var(--white)";
-                    return errorMessage.innerHTML = "Se debe de poner un mensaje mayor a 10 carácteres y menor a 600 carácteres.<br>";
+                    errorMessage.innerHTML = "Se debe de poner un mensaje mayor a 10 carácteres y menor a 600 carácteres.<br>";
+                    return e.preventDefault();
                 }
             }
         }
@@ -100,16 +104,15 @@ const createFormContainer = (idContainer, submit, errorMessage) => {
 
         if(confirm){
             errorMessage.style.color = "var(--aqua)";
-            return errorMessage.innerHTML = "Mensaje enviado correctamente.<br>";
+            errorMessage.innerHTML = "Mensaje enviado correctamente.<br>";
         }else{
             values.nameForm = "",
             values.emailForm = "",
             values.subjectForm = "",
             values.messageForm = "";
             errorMessage.style.color = "var(--aqua)";
-            return `
-                ${errorMessage.innerHTML = "Vuelve a escribir el mensaje con los datos correctos.<br>"}
-            `;
+            errorMessage.innerHTML = "Vuelve a escribir el mensaje con los datos correctos.<br>";
+            return e.preventDefault();
         }
     });
 
