@@ -40,7 +40,6 @@ const createFormContainer = (idContainer, submit, errorMessage) => {
     const values = [];
 
     submit.addEventListener("click", e => {
-        e.preventDefault();
         errorMessage.innerHTML = "";
 
         for(let i = 0; i < formChildren.length; i++){
