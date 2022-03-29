@@ -100,8 +100,7 @@ const createFormContainer = (idContainer, submit, errorMessage) => {
 
         if(confirm){
             errorMessage.style.color = "var(--aqua)";
-            errorMessage.innerHTML = "Mensaje enviado correctamente.<br>";
-            return e.defaultPrevented();
+            return errorMessage.innerHTML = "Mensaje enviado correctamente.<br>";
         }else{
             values.nameForm = "",
             values.emailForm = "",
