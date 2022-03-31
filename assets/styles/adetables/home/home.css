@@ -3,7 +3,7 @@
 }
 
 .home > div > h1{
-    margin: 2.5rem 0 1.5rem 0;
+    margin: 2rem 0 2.5rem 0;
     background-color: rgba(245, 234, 234, 0.3);
     box-shadow: 0 0 1rem 0.2rem var(--black);
     padding: 0.5rem 1rem;
@@ -20,14 +20,28 @@
     transition: all ease 0.5s;
 }
 
+.home > div > h2{
+    font-weight: 700;
+}
+
 .home > div > h2 > div{
     cursor: default;
     transition: all 0.5s;
+    z-index: 1;
 }
 
 .home > div > h2 > span{
     margin-top: 0.5rem;
     color: var(--orange);
+    font-weight: 100;
+}
+
+.home > div > h2 > span > b{
+    right: 0;
+    width: 0;
+    background-color: var(--body);
+    border-left: 1px solid var(--white);
+    animation: 3s write alternate infinite;
 }
 
 .home > div > span{

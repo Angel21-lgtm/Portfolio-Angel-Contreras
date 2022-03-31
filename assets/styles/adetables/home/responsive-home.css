@@ -1,7 +1,6 @@
 /* 300 and 575 pixels */
 @media (min-width: 300px){
     .home > div > h1{
-        margin: 3.5rem 0 2.5rem 0;
         padding: 1rem 1.5rem;
         font-size: 3rem;
     }
@@ -11,7 +10,8 @@
     }
 
     .home > div > h2{
-        font-size: 2rem;
+        font-size: 1.97rem;
+        font-weight: 800;
     }
 
     .home > div > h2 > div{
@@ -30,7 +30,6 @@
 /* 576 and 767 pixels */
 @media (min-width: 576px){
     .home > div > h1{
-        margin: 4rem 0 4rem 0;
         padding: 3rem 3.5rem;
         font-size: 4rem;
         border-radius: 3rem;
@@ -41,7 +40,7 @@
     }
 
     .home > div > h2{
-        font-size: 3rem;
+        font-size: 2.95rem;
     }
 
     .home > div > h2 > div{
@@ -62,7 +61,6 @@
 @media (min-width: 768px){
 
     .home > div > h1{
-        margin: 5rem 0 5rem 0;
         padding: 3rem 3.5rem;
         font-size: 5rem;
         border-radius: 3rem;
@@ -70,6 +68,7 @@
 
     .home > div > h2{
         font-size: 4rem;
+        font-weight: 900;
     }
 
 }
