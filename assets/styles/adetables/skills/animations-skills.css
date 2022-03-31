@@ -36,9 +36,3 @@
     box-shadow: 0 0 2rem 0.3rem var(--black);
     transform: scale(1.1);
 }
-
-.skills-pro > .skill-item button:hover{
-    color: var(--white);
-    border-color: var(--white);
-    transform: scale(1.1);
-}

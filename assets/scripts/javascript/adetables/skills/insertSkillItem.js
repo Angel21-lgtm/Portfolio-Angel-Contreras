@@ -80,8 +80,8 @@ const insertSkillItem = (containerId) => {
                     <div class="level-skill col-w-5 relative">
                         <div id="${item.idLevelSkill}" class="active-level-skill col-w-12 col-h-12 absolute"></div>
                     </div>
-                    <button id="${item.idOn}">On</button>
-                    <button id="${item.idOff}" class="none">Off</button>
+                    <button id="${item.idOn}" class="button-anime">On</button>
+                    <button id="${item.idOff}" class="button-anime none">Off</button>
                 </div>
             </div>
         `;

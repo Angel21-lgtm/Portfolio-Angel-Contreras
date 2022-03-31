@@ -3,6 +3,7 @@
     background: var(--amy-crisp);
     border-bottom: 3px solid var(--black);
     transition: all ease-out 3s;
+    top: 0;
     z-index: 10;
 }
 

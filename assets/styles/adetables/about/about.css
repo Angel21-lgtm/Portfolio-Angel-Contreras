@@ -74,14 +74,20 @@
 }
 
 #about > .content-section-about > div > .photo > .zoom-my-photo{
-    top: 5%;
-    right: -90%;
-    width: 90%;
-    height: 90%;
+    top: 0;
+    right: -100%;
+    background: var(--black-img);
+    opacity: 0;
     z-index: 10;
+    transform: scale(0);
+    transition: all 1s ease-in;
+}
+
+#about > .content-section-about > div > .photo > .zoom-my-photo > img{
+    border-radius: 1rem;
     opacity: 0;
     transform: scale(0);
-    transition: all 1s;
+    transition: all 1s ease-in;
 }
 
 #about > .content-section-about > div > .photo > button {
@@ -102,7 +108,7 @@
     max-width: 600px;
     overflow: hidden;
     border-radius: 1rem;
-    box-shadow: 0 0 2rem -1.5rem var(--black);
+    box-shadow: 0 0 12px 2px var(--black);
 }
 
 #about > .content-section-about > .text-about-me-content-sections .text-about-me-sections{
@@ -142,7 +148,7 @@
     transition: all ease 0.5s;
 }
 
-#about > .content-section-about >  .text-about-me-content-sections #left-arrow{
+#about > .content-section-about >  .text-about-me-content-sections > #left-arrow{
     left: -2%;
 }
 
@@ -152,13 +158,18 @@
 
 /* evenst */
 .zoom-photo-style{
-    right: 5% !important;
+    right: 0 !important;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+.zoom-photo-style > img{
     opacity: 1 !important;
     transform: scale(1) !important;
 }
 
 .right-zoom-photo-button{
-    right: 5% !important;
+    right: 0 !important;
     opacity: 1 !important;
     transform: scale(1) !important;
 }

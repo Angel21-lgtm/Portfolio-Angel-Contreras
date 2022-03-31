@@ -8,12 +8,11 @@
     box-shadow: 0 0 1rem 0.2rem var(--black);
     padding: 0.5rem 1rem;
     border-radius: 2rem;
-    letter-spacing: 2px;
 }
 
 .home > div > div > button{
     border-radius: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     padding: 0.5rem 1rem;
     background-color: transparent;
     color: var(--aqua);
@@ -21,8 +20,9 @@
     transition: all ease 0.5s;
 }
 
-.home > div > h2{
-    padding: 0.5rem 0 0.5rem 0;
+.home > div > h2 > div{
+    cursor: default;
+    transition: all 0.5s;
 }
 
 .home > div > h2 > span{
@@ -30,27 +30,20 @@
     color: var(--orange);
 }
 
-.home > div > a{
+.home > div > span{
+    margin: 2rem 0;
+}
+
+.home > div > span > .buttons-cv-and-github{
+    margin: 1rem;
     padding: 1rem 0.5rem;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
     border: 4px solid var(--aqua);
     font-family: 'Montserrat', sans-serif;
     box-shadow: 0 0 1rem 0.2rem var(--black);
     font-size: small;
     font-weight: 900;
     color: var(--aqua);
-    letter-spacing: 3px;
-    transition: all ease-in-out 0.5s;
-}
-
-.home > div > button{
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border: 4px solid var(--aqua);
-    background-color: var(--body);
-    color: var(--aqua);
-    box-shadow: 0 0 1rem 0.2rem var(--black);
+    background-color: transparent;
     letter-spacing: 3px;
     transition: all ease-in-out 0.5s;
 }
@@ -86,6 +79,10 @@
 }
 
 /* events */
+.text-subtitles-animation{
+    animation: text-subtitles-animation 0.5s ease-in;
+}
+
 .cv{
     text-shadow: 5px 5px 6px var(--black);
     color: var(--white) !important;

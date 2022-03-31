@@ -121,3 +121,12 @@ form input{
     font-size: small;
     transition: all ease 0.8s;
 }
+
+/* animations */
+.button-anime:hover{
+    transform: scale(1.1);
+    background-color: transparent !important;
+    color: var(--white) !important;
+    border-color: var(--white) !important;
+    transition: all ease 0.5s;
+}

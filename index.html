@@ -49,7 +49,7 @@
         <!-- home-section -->
         <header id="home" class="relative"> 
             <!-- dropdown-menu -->
-            <div class="image-menu col-w-12 flex justify-start">
+            <div class="image-menu col-w-12 flex justify-start relative">
                 <div class="col-w-2 button-menu">
                     <img class="block col-w-12 col-h-12" src="./assets/images/icons/dropdown-menu/menu.svg" alt="Menu icon">
                 </div>
@@ -57,46 +57,7 @@
 
             <nav id="dropdown-menu" class="col-w-12 fixed">
                 <ul class="col-w-12 col-h-12 flex justify-around flex-column">
-                    <li class="flex align-center relative">
-                        <a href="#home" class="select-option-dropdown-menu-color col-w-12 col-h-12">
-                            Inicio
-                        </a>
-                        <div class="absolute select-option-dropdown-menu">
-                            <img class="col-w-12 col-h-12" src="./assets/images/icons/dropdown-menu/home.svg" alt="Home">
-                        </div>
-                    </li>
-                    <li class="flex align-center relative">
-                        <a href="#about">
-                            Acerca
-                        </a>
-                        <div class="absolute">
-                            <img class="block col-w-12 col-h-12" src="./assets/images/icons/dropdown-menu/about.svg" alt="About">
-                        </div>
-                    </li>
-                    <li class="flex align-center relative">
-                        <a href="#skills">
-                            Habilidades
-                        </a>
-                        <div class="absolute">
-                            <img class="col-w-12 col-h-12" src="./assets/images/icons/dropdown-menu/skills.svg" alt="Skills">
-                        </div>
-                    </li>
-                    <li class="flex align-center relative">
-                        <a href="#portfolio">
-                            Portafolio
-                        </a>
-                        <div class="absolute">
-                            <img class="col-w-12 col-h-12" src="./assets/images/icons/dropdown-menu/portfolio.svg" alt="Portfolio">
-                        </div>
-                    </li>
-                    <li class="flex align-center relative">
-                        <a href="#contact">
-                            Contacto
-                        </a>
-                        <div class="absolute">
-                            <img class="col-w-12 col-h-12" src="./assets/images/icons/dropdown-menu/contact.svg" alt="Contact">
-                        </div>
-                    </li>
+
                 </ul>
             </nav>
             <!-- dropdown-menu -->
@@ -109,6 +70,7 @@
 
             <!-- static-menu -->
             <nav class="none align-center" id="static-menu">
+
             </nav>
             <!-- static-menu -->
 
@@ -116,15 +78,41 @@
             <div class="home col-w-12 flex flex-column justify-center align-center">
                 <div class="flex justify-center align-center flex-column">
                     <h1 class="flex justify-center align-center"></h1>
+
                     <div>
-                        <button id="active-title">On</button>
-                        <button id="active-title" class="button-title-two none">Off</button>
+                        <button id="active-title" class="button-anime">On</button>
+                        <button id="active-title" class="button-title-two none button-anime">Off</button>
                     </div>
-                    <h2 class="col-w-11">!Desarrollador Web <span class="inline-block">Front-End!</span></h2>
-                    <a id="cv" href="./assets/cv/Miguel Ángel Contreras Osorio.pdf" download="Miguel Ángel Contreras Osorio.pdf">
-                        Descargar CV
-                    </a>
-                    <button class="repo-portfolio">Git Hub</button>
+                    
+                    <h2 id="subtitle-home" class="col-w-11 flex flex-wrap justify-center align-content-around">
+                        <div class="text-subtitle">!</div>
+                        <div class="text-subtitle">D</div>
+                        <div class="text-subtitle">e</div>
+                        <div class="text-subtitle">s</div>
+                        <div class="text-subtitle">a</div>
+                        <div class="text-subtitle">r</div>
+                        <div class="text-subtitle">r</div>
+                        <div class="text-subtitle">o</div>
+                        <div class="text-subtitle">l</div>
+                        <div class="text-subtitle">l</div>
+                        <div class="text-subtitle">a</div>
+                        <div class="text-subtitle">d</div>
+                        <div class="text-subtitle">o</div>
+                        <div class="text-subtitle">r</div>
+                        <div class="text-subtitle space col-w-12"></div>
+                        <div class="text-subtitle">W</div>
+                        <div class="text-subtitle">e</div>
+                        <div class="text-subtitle">b</div>
+                        <span class="block col-w-12">Front-End!</span>
+                    </h2>
+
+                    <span class="flex justify-center align-center flex-wrap">
+                        <a id="cv" class="buttons-cv-and-github button-anime" href="./assets/cv/Miguel Ángel Contreras Osorio.pdf" download="Miguel Ángel Contreras Osorio.pdf">
+                            Descargar CV
+                        </a>
+
+                        <button class="repo-portfolio buttons-cv-and-github button-anime">GitHub</button>
+                    </span>
                 </div>
 
                 <nav id="nav-social" class="col-w-12 flex justify-center">
@@ -161,8 +149,8 @@
 
                 <div class="col-w-11 flex justify-center align-center align-self-center">
                     <div id="photo" class="photo relative col-w-12">
-                        <div class="zoom-my-photo col-w-12 col-h-12 fixed">
-                            <img class="col-w-12 col-h-12" src="./assets/images/photos/about/photo.jpg" alt="My photo">
+                        <div class="zoom-my-photo col-w-12 col-h-12 fixed flex justify-center align-center">
+                            <img class="col-w-11 col-h-10" src="./assets/images/photos/about/photo.jpg" alt="My photo">
                         </div>
                         <button id="close-photo" class="fixed">
                             <img class="col-w-12 col-h-12" src="./assets/images/icons/about/close-menu.svg" alt="">
@@ -171,76 +159,17 @@
                 </div>
 
                 <div class="text-about-me-content-sections align-self-center flex flex-column justify-center col-w-11 relative">
+
                     <div class="text-about-me-sections flex align-center justify-center relative col-w-12">
-                        <p>
-                            <b class="inline-block">1.- ¡Hola!</b><br>
-                            Mi nombre completo es Miguel Ángel Contreras Osorio.<br>
-                            ¡Bienvenidos a mi sitio web personal tipo portafolio!
-                            En el encontrarán todos mis proyectos, webs y videojuegos (web, de escritorio y móviles).<br>
-                            Tambien pueden visitar mi perfil de GitHub donde encontrarán todo el código fuente del proyecto, 
-                            aparte de visitar mi perfil de Codepen, donde me dedico a hacer "Arte en CSS3 y JavaScript" (animaciones
-                            y algunos pequeños programas de interactividad).<br>
-                            También no olvides seguirme en Instagram, Facebook, Twitter y Tik-Tok, donde estaré subiendo contenido 
-                            con respecto a la programación, informática y la tecnología actual. Tampoco olvides dejar tu 
-                            like a mi contenido.
-                        </p>
-                        <p>
-                            <b class="inline-block">2.- ¡Mis proyectos!</b><br>
-                            Los proyectos que tengo realizados hasta al momento son muy pocos,
-                            ya que apenas soy un estudiante que trata de llegar al nivel "Senior" en
-                            la programación. <br>
-                            Este portafolio web es mi primer proyecto real echo en código nativo y sin 
-                            librerías, frameworks y ninguna otra tecnología.
-                            Los lenguajes empleados en este sitio web son: HTML5, CSS3 y JavaScript ES6 al más reciente.<br>
-                            Los próximos proyectos que tengo pensados realizar son: un blog para este sitio web (mi portafolio web), 
-                            un sitio web de videojuegos online echo con Ract.js, Node.js, Bootstrap y SQL para poder registrarse en la web y 
-                            poder guardar tu progreso en el videojuego que se esté jugando o los videojuegos que se estén jugando.<br>
-                            Los proyectos que se encontrarán en la sección "Portafolio" son muy pocos y muy sencillos.
-                        </p>
-                        <p>
-                            <b class="inline-block">3.- ¡Soy un Desarrollador Web!</b><br>
-                            Antes de llegar al hámbito de la programación primero me estaba dedicando
-                            al hámbito de la seguridad informática y hacking ético en Kali Linux, aparte de 
-                            manejar distintas distibuciones de Linux, como; Ubuntu, Debian, etc... Cuando quería seguir avanzando 
-                            empecé con mi primer lenguaje de programación, el cual es C#, con este lenguaje quería dedicarme
-                            al desarrollo de videojuegos y aplicaciones de escritorio, aparte de hacer un buen Back-End 
-                            en este lenguaje y cuando me estaba adentrando en las auditorías de páginas web me encontré con Javascript.<br>
-                            Primero empecé por HTML5, luego CSS3 y actualmente me encuentro tratando de dominar JavaScript y tratar de saberlo 
-                            al menos casi al 100%. ¡Me enamoré de este lenguaje de programación!
-                        </p>
-                        <p>
-                            <b class="inline-block">4.- ¡Desarrollo de Videojuegos!</b><br>
-                            Estoy tratando de enfocarme también al desarrollo de videojuegos, 
-                            principalmente empezar por los videojuegos web, luego los juegos de escritorio y de consola videojuegos,
-                            y por último los videojuegos móviles. Para poder dominar esta rama del desarrollo de software 
-                            estoy tratando de estudiar bien lo que es C#, Python y Unity (cuando acabe de estudar a fondo JavaScript, Node y React) 
-                            y crear videojuegos de muy buena calidad, con gráficos excepcionales y una jugabilidad excelente.<br>
-                            También estoy estudiando lo que son las redes de computadoras para poder ser 
-                            programador Full-Stack :b .
-                        </p>
-                        <p>
-                            <b class="inline-block">5.- ¡Mi trabajo!</b><br>
-                            Mi trabajo actualmente se basa en el desarrollo web del lado del cliente
-                            (Front-End) con algo de experiencia en el diseño UI and UX que actualmente me encuentro estudiando, 
-                            también me encuentro manejando lo que es Git y GitHub, 
-                            en un futuro dominaré el Back-End para convertirme en Desarrollador Web Full-Stack,
-                            dominando las tecnologías que son: JS; React.js, Node.js, Express.js, CSS3; Bootstrap, HTML5, SQL; PostgreSQL, MongoDB, 
-                            Python3 (del lado del servidor) y C# (del lado del servidor).<br>
-                            Las ramas que también estoy tratando de dominar son: el desarrollo de videojuegos (web, de escritorio, de consola de videojuegos y móviles), 
-                            desarrollo de aplicaciones (web, de escritorio y móviles), consultor de bases de datos, experto en redes de 
-                            computadoras, desarrollo de IA (Inteligencia Artificial) en Python y experto en sistemas Linux.
-                        </p>
-                        <p>
-                            <b class="inline-block">6.- ¡Lenguajes Dominantes!</b><br>
-                            Próximamente...
-                        </p>
                     </div>
+
                     <button id="left-arrow" class="col-w-4 none absolute">
                         <img class="col-w-12 col-h-12" src="./assets//images//icons//about/about-arrow/left.png" alt="left-arrow">
                     </button>
                     <button id="right-arrow" class="col-w-4 absolute">
                         <img class="col-w-12 col-h-12" src="./assets//images//icons//about/about-arrow/right.png" alt="right-arrow">
                     </button>
+
                 </div>
 
             </div>
@@ -306,6 +235,7 @@
         <!-- contact-section -->
         <footer class="flex flex-column justify-start align-center" id="contact">
             <h2 class="title-contact relative">Contacto</h2>
+
             <div id="form-container" class="col-w-11 flex justify-center">
                 <form id="form" method="" autocomplete="off" action="" class="col-w-12 flex flex-wrap justify-between align-center" netlify>
                     <input id="name" class="name-form col-w-12" type="text" placeholder="Nombre" name="name" value="">
@@ -316,22 +246,26 @@
                     
                     <textarea id="message" class="message-form col-w-12" placeholder="Tu Mensaje" name="message" value=""></textarea>
                         
-                    <input id="submit" class="submit-form" type="submit" placeholder="Enviar" name="submit" value="Enviar">
+                    <input id="submit" class="submit-form button-anime" type="submit" placeholder="Enviar" name="submit" value="Enviar">
                 </form>
             </div>
+
             <p id="error-message" class="col-w-10"></p>
 
             <div class="contact-info col-w-12 flex flex-wrap justify-center align-center">
                 <p class="col-w-11">
                     <b class="block">Teléfono: </b>+52 1 56 2753 2073
                 </p>
+
                 <p class="col-w-11">
                     <b class="block">Dirección: </b>
                     Carretera México-Toluca Km. 30 Colonia La Pila, Cuajimalpa de Morelos, Ciudad de México, C.P 05750
                 </p>
+
                 <p class="col-w-11">
                     <b class="block">Correo electrónico:</b>mc603452@gmail.com
                 </p>
+
                 <p class="made-by col-w-11">Echo por Miguel Ángel Contreras Osorio 22/03/2022 ©</p>
             </div>
         </footer>

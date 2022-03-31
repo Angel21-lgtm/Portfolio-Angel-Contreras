@@ -14,9 +14,11 @@
         font-size: 2rem;
     }
 
-    .home > div > a{
-        margin-top: 5rem;
-        margin-bottom: 4rem;
+    .home > div > h2 > div{
+        margin: 1px;
+    }
+
+    .home > div > span > .buttons-cv-and-github{
         font-size: medium;
     }
 
@@ -40,6 +42,15 @@
 
     .home > div > h2{
         font-size: 3rem;
+    }
+
+    .home > div > h2 > div{
+        margin: 1px;
+    }
+
+    .home > div > h2 > .space{
+        width: auto;
+        margin: 0.5rem;
     }
 
     .home > nav{
@@ -84,9 +95,7 @@
         font-size: 5rem;
     }
 
-    .home > div > a{
-        margin-top: 5rem;
-        margin-bottom: 4rem;
+    .home > div > span > .buttons-cv-and-github{
         font-size: large;
     }
 

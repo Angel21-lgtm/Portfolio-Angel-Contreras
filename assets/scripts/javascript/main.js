@@ -7,6 +7,7 @@ import { dropdown } from "./library/menu.js";
 import { scrollMenuFixed } from "./library/scroll.js";
 
 // dropdown-menu
+import { insertItemDropdownMenu } from "./adetables/menu/dropdown-menu/insertItemDropdownMenu.js";
 import { selectOptionDropdownMenu } from "./adetables/menu/dropdown-menu/selectOptionDropdownMenu.js";
 import { scrollSectionDropdownMenu } from "./adetables/menu/dropdown-menu/scrollSectionDropdownMenu.js";
 
@@ -18,13 +19,15 @@ import { scrollSectionStaticMenu } from "./adetables/menu/static-menu/scrollSect
 
 // home
 import { writeTitle } from "./adetables/home/writeTitle.js";
+import { animationSubtitleHome } from "./adetables/home/animationSubtitleHome.js";
 import { clickCv } from "./adetables/home/clickCv.js";
 import { clickRepoPortfolio } from "./adetables/home/clickRepoPortfolio.js";
 import { navSocial } from "./adetables/home/navSocial.js";
 
 // about
-import { textAboutMeSections } from "./adetables/about/textAboutMeSections.js";
 import { zommPhoto } from "./adetables/about/zoomPhoto.js";
+import { textAboutMeSectionsInsertText } from "./adetables/about/textAboutMeSectionsInsertText.js";
+import { textAboutMeSections } from "./adetables/about/textAboutMeSections.js";
 
 // skills
 import { insertIsometric } from "./adetables/skills/insertIsometric.js";
@@ -66,6 +69,9 @@ const main = function(root){
           activeTitle = document.getElementById("active-title"),
           buttonTitleTwo = document.querySelector(".button-title-two");
 
+    const textSubtitles = document.querySelectorAll(".text-subtitle"),
+          textSubtitlesAnimation = "text-subtitles-animation";
+
     const cv = document.getElementById("cv"),
           classCv = "cv";
 
@@ -74,15 +80,15 @@ const main = function(root){
     const navSocialContainer = document.getElementById("nav-social");
     
     // about
-    const textAboutMeSectionsContent = document.querySelector(".text-about-me-sections"),
-          leftArrow = document.getElementById("left-arrow"),
-          rightArrow = document.getElementById("right-arrow");
-
     const photo = document.getElementById("photo"),
           zoomMyPhoto = document.querySelector(".zoom-my-photo"),
           zoomPhotoStyle = "zoom-photo-style",
           rightZoomPhotoButton = "right-zoom-photo-button",
           closePhoto = document.getElementById("close-photo");
+
+    const textAboutMeSectionsContent = document.querySelector(".text-about-me-sections"),
+          leftArrow = document.getElementById("left-arrow"),
+          rightArrow = document.getElementById("right-arrow");
 
     // skills
     const isometric = document.querySelector(".isometric"),
@@ -105,6 +111,7 @@ const main = function(root){
           errorMessage = document.getElementById("error-message");
 
     return `
+        ${insertItemDropdownMenu(dropdownMenu)}
         ${dropdown(styleDropdownMenu, buttonMenu, dropdownMenu)}
         ${scrollMenuFixed(imgMenu, scrollImageDropdownMenu)}
         ${selectOptionDropdownMenu(styleOneSelectOptionDropdownMenu, styleTwoSelectOprtionDropdownMenu, styleDropdownMenu, dropdownMenu)}
@@ -118,12 +125,14 @@ const main = function(root){
         ${scrollSectionStaticMenu(staticMenu, styleSelectOptionStaticMenu)}
     
         ${writeTitle(text, title, activeTitle, buttonTitleTwo)}
+        ${animationSubtitleHome(textSubtitles, textSubtitlesAnimation)}
         ${clickCv(cv, classCv)}
         ${clickRepoPortfolio(repPortfolio)}
         ${navSocial(navSocialContainer)}
 
-        ${textAboutMeSections(textAboutMeSectionsContent, leftArrow, rightArrow)}
         ${zommPhoto(photo, zoomMyPhoto, zoomPhotoStyle, rightZoomPhotoButton, closePhoto)}
+        ${textAboutMeSectionsInsertText(textAboutMeSectionsContent)}
+        ${textAboutMeSections(textAboutMeSectionsContent, leftArrow, rightArrow)}
 
         ${insertIsometric(isometric)}
         ${insertCurrentlyStudying(currentlyStudying)}
