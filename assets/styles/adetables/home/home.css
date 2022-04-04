@@ -21,17 +21,50 @@
 }
 
 .home > div > h2{
-    font-weight: 700;
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
 }
 
 .home > div > h2 > div{
     cursor: default;
     transition: all 0.5s;
-    z-index: 1;
+    text-shadow: 5px 5px 6px var(--black);
+}
+
+.home > div > h2 > .letter-developer{
+    color: rgba(0, 0, 0, 0.2) !important;
+    text-shadow: -3px 5px 6px var(--black);
+}
+
+.home > div > h2 > .letter-developer::before{
+    content: "D";
+    color: var(--aqua);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 14%;
+    top: 2%;
+}
+
+.home > div > h2 > .letter-web{
+    color: rgba(0, 0, 0, 0.5) !important;
+    text-shadow: -5px 5px 6px var(--black);
+}
+
+.home > div > h2 > .letter-web::before{
+    content: "W";
+    color: var(--aqua);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 14%;
+    top: 2%;
 }
 
 .home > div > h2 > span{
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     color: var(--orange);
     font-weight: 100;
 }
@@ -94,7 +127,8 @@
 
 /* events */
 .text-subtitles-animation{
-    animation: text-subtitles-animation 0.5s ease-in;
+    color: var(--aqua) !important;
+    animation: text-subtitles-animation 0.6s ease;
 }
 
 .cv{

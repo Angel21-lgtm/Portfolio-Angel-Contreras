@@ -1,13 +1,5 @@
 /* 300 and 575 pixels */
 @media (min-width: 300px){
-    .title-portfolio{
-        font-size: 2.5rem;
-    }
-    
-    .title-portfolio::after{
-        height: 5px;
-    }
-
     .nav-sections-projects button{
         font-size: medium;
     }
@@ -48,16 +40,6 @@
 
 /* 768 and 991 pixels */
 @media (min-width: 768px){
-    .title-portfolio{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        font-size: 3.5rem;
-    }
-    
-    .title-portfolio::after{
-        height: 7px;
-    }
-
     /* projects */
     .project-container{
         height: 300px;
@@ -79,22 +61,10 @@
 }
 
 /* 992 and 1199 pixels */
-@media (min-width: 992px){
-    .title-portfolio{
-        font-size: 4rem;
-    }
-}
+@media (min-width: 992px){}
 
 /* 1200 and onwards pixels */
 @media (min-width: 1200px ){
-    .title-portfolio{
-        font-size: 5rem;
-    }
-
-    .title-portfolio::after{
-        height: 9px;
-    }
-
     .nav-sections-projects button{
         font-size: x-large;
     }

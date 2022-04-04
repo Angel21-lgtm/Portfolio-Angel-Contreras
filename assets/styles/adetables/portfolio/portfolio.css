@@ -3,27 +3,6 @@
     transition: all ease-out 2s;
 }
 
-.title-portfolio{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    font-weight: 900;
-    font-size: xx-large;
-    text-shadow: 0 0 9px var(--black);
-    color: var(--white);
-    transition: all ease 0.5s;
-}
-
-.title-portfolio::after{
-    content: "";
-    background-color: var(--orange);
-    width: 25%;
-    height: 3px;
-    position: absolute;
-    bottom: 0;
-    left: 37.5%;
-}
-
 .nav-sections-projects{
     padding: 1rem;
     margin-bottom: 3rem;

@@ -1,13 +1,5 @@
 /* 300 and 575 pixels */
 @media (min-width: 300px){
-    .title-contact{
-        font-size: 2.5rem;
-    }
-    
-    .title-contact::after{
-        height: 5px;
-    }
-
     form input{
         font-size: large;
     }
@@ -46,15 +38,6 @@
 
 /* 768 and 991 pixels */
 @media (min-width: 768px){
-    .title-contact{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        font-size: 3.5rem;
-    }
-    
-    .title-contact::after{
-        height: 7px;
-    }
     form input{
         font-size: x-large;
     }
@@ -87,22 +70,10 @@
 }
 
 /* 992 and 1199 pixels */
-@media (min-width: 992px){
-    .title-contact{
-        font-size: 4rem;
-    }
-}
+@media (min-width: 992px){}
 
 /* 1200 and onwards pixels */
 @media (min-width: 1200px ){
-    .title-contact{
-        font-size: 5rem;
-    }
-
-    .title-contact::after{
-        height: 9px;
-    }
-
     form{
         max-width: 1068px;
     }

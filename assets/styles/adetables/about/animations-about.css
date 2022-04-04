@@ -1,7 +1,3 @@
-#about:hover .title-about{
-    color: var(--white-da);
-}
-
 #about > .content-section-about > div > .photo:hover{
     box-shadow: -0.5rem -0.5rem 0.5rem 0.5rem var(--black);
 }

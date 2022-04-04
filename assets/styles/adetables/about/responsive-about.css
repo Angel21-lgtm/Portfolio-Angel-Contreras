@@ -1,13 +1,5 @@
 /* 300 and 575 pixels */
 @media (min-width: 300px){
-    #about > .title-about{
-        font-size: 2.5rem;
-    }
-
-    #about > .title-about::after{
-        height: 5px;
-    }
-
     #about > .content-section-about > .who-i-am{
         font-size: x-large;
     }
@@ -55,16 +47,6 @@
 
 /* 768 and 991 pixels */
 @media (min-width: 768px){
-    #about > .title-about{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        font-size: 3.5rem;
-    }
-
-    #about > .title-about::after{
-        height: 7px;
-    }
-
     #about > .content-section-about > .text-about-me{
         width: 50%;
         margin-bottom: 3rem;
@@ -91,10 +73,6 @@
 
 /* 992 and 1199 pixels */
 @media (min-width: 992px){
-    #about > .title-about{
-        font-size: 4rem;
-    }
-
     #about > .content-section-about > h2{
         font-size: 2.5rem;
     }
@@ -125,15 +103,6 @@
 
 /* 1200 and onwards pixels */
 @media (min-width: 1200px ){
-    #about > .title-about{
-        font-size: 5rem;
-
-    }
-
-    #about > .title-about::after{
-        height: 9px;
-    }
-
     #about > .content-section-about > h2{
         font-size: 3rem;
     }

@@ -6,6 +6,9 @@ const root = document.getElementById("root");
 import { dropdown } from "./library/menu.js";
 import { scrollMenuFixed } from "./library/scroll.js";
 
+// resets
+import { resets } from "./resets.js";
+
 // dropdown-menu
 import { insertItemDropdownMenu } from "./adetables/menu/dropdown-menu/insertItemDropdownMenu.js";
 import { selectOptionDropdownMenu } from "./adetables/menu/dropdown-menu/selectOptionDropdownMenu.js";
@@ -20,7 +23,7 @@ import { scrollSectionStaticMenu } from "./adetables/menu/static-menu/scrollSect
 // home
 import { writeTitle } from "./adetables/home/writeTitle.js";
 import { animationSubtitleHome } from "./adetables/home/animationSubtitleHome.js";
-import { clickCv } from "./adetables/home/clickCv.js";
+import { ClickButtonCv } from "./adetables/home/clickButtons.js";
 import { clickRepoPortfolio } from "./adetables/home/clickRepoPortfolio.js";
 import { navSocial } from "./adetables/home/navSocial.js";
 
@@ -41,7 +44,7 @@ import { insertProjects } from "./adetables/portfolio/insertProjects.js";
 // contact
 import { createFormContainer } from "./adetables/contact/createFormContact.js";
 
-const main = function(root){
+const main = (function(root){
 
     // dropdown-menu
     const styleDropdownMenu = "active-dropdown-menu",
@@ -53,6 +56,12 @@ const main = function(root){
 
     const styleOneSelectOptionDropdownMenu = "select-option-dropdown-menu",
           styleTwoSelectOprtionDropdownMenu = "select-option-dropdown-menu-color";
+
+    insertItemDropdownMenu(dropdownMenu);
+    dropdown(styleDropdownMenu, buttonMenu, dropdownMenu);
+    scrollMenuFixed(imgMenu, scrollImageDropdownMenu);
+    selectOptionDropdownMenu(styleOneSelectOptionDropdownMenu, styleTwoSelectOprtionDropdownMenu, styleDropdownMenu, dropdownMenu);
+    scrollSectionDropdownMenu(dropdownMenu, styleTwoSelectOprtionDropdownMenu, styleOneSelectOptionDropdownMenu);
           
     // static-menu
     const homeLogo = document.getElementById("home-logo"),
@@ -62,6 +71,13 @@ const main = function(root){
           scrollStaticMenu = "scroll-static-menu";
         
     const styleSelectOptionStaticMenu = "select-option-static-menu";
+
+    insertItemStaticMenu(staticMenu);
+    scrollMenuFixed(homeLogo, positionLogo);
+    scrollMenuFixed(staticMenu, scrollStaticMenu);
+    selectOptionStaticMenu(staticMenu, styleSelectOptionStaticMenu);
+    selectIcon(staticMenu);
+    scrollSectionStaticMenu(staticMenu, styleSelectOptionStaticMenu);
 
     // home
     const text = "Ángel Contreras",
@@ -73,11 +89,18 @@ const main = function(root){
           textSubtitlesAnimation = "text-subtitles-animation";
 
     const cv = document.getElementById("cv"),
-          classCv = "cv";
+          animeButton = "anime-button",
+          buttonCv = new ClickButtonCv(cv, animeButton);
 
     const repPortfolio = document.querySelector(".repo-portfolio");
 
     const navSocialContainer = document.getElementById("nav-social");
+
+    writeTitle(text, title, activeTitle, buttonTitleTwo);
+    animationSubtitleHome(textSubtitles, textSubtitlesAnimation);
+    buttonCv.clickButon();
+    clickRepoPortfolio(repPortfolio, animeButton);
+    navSocial(navSocialContainer);
     
     // about
     const photo = document.getElementById("photo"),
@@ -90,6 +113,10 @@ const main = function(root){
           leftArrow = document.getElementById("left-arrow"),
           rightArrow = document.getElementById("right-arrow");
 
+      zommPhoto(photo, zoomMyPhoto, zoomPhotoStyle, rightZoomPhotoButton, closePhoto);
+      textAboutMeSectionsInsertText(textAboutMeSectionsContent);
+      textAboutMeSections(textAboutMeSectionsContent, leftArrow, rightArrow);
+
     // skills
     const isometric = document.querySelector(".isometric"),
           currentlyStudying = document.querySelector(".currently-studying");
@@ -97,50 +124,28 @@ const main = function(root){
     const skillsPro = document.querySelector(".skills-pro"),
           activeButtonSkill = "active-button-skill";
 
+    insertIsometric(isometric);
+    insertCurrentlyStudying(currentlyStudying);
+    insertSkillItem(skillsPro, activeButtonSkill);
+
     // portfolio
     const navSectionsProjects = document.querySelector(".nav-sections-projects");
 
     const websSectionProjects = document.getElementById("webs-section-projects"),
-          gamesSectionProjects = document.getElementById("games-section-projects");
+          gamesSectionProjects = document.getElementById("games-section-projects"),
+          appsWebSectionProjects = document.getElementById("apps-web-section-projects");
 
     const selectSection = "select-section";
+
+    insertButtonsPortfolio(navSectionsProjects);
+    insertProjects([websSectionProjects, gamesSectionProjects, appsWebSectionProjects], navSectionsProjects, selectSection);
 
     // contact
     const formContainer = document.getElementById("form"),
           submit = document.getElementById("submit"),
           errorMessage = document.getElementById("error-message");
 
-    return `
-        ${insertItemDropdownMenu(dropdownMenu)}
-        ${dropdown(styleDropdownMenu, buttonMenu, dropdownMenu)}
-        ${scrollMenuFixed(imgMenu, scrollImageDropdownMenu)}
-        ${selectOptionDropdownMenu(styleOneSelectOptionDropdownMenu, styleTwoSelectOprtionDropdownMenu, styleDropdownMenu, dropdownMenu)}
-        ${scrollSectionDropdownMenu(dropdownMenu, styleTwoSelectOprtionDropdownMenu, styleOneSelectOptionDropdownMenu)}
+      createFormContainer(formContainer, submit, errorMessage);
 
-        ${insertItemStaticMenu(staticMenu)}
-        ${scrollMenuFixed(homeLogo, positionLogo)}
-        ${scrollMenuFixed(staticMenu, scrollStaticMenu)}
-        ${selectOptionStaticMenu(staticMenu, styleSelectOptionStaticMenu)}
-        ${selectIcon(staticMenu)}
-        ${scrollSectionStaticMenu(staticMenu, styleSelectOptionStaticMenu)}
-    
-        ${writeTitle(text, title, activeTitle, buttonTitleTwo)}
-        ${animationSubtitleHome(textSubtitles, textSubtitlesAnimation)}
-        ${clickCv(cv, classCv)}
-        ${clickRepoPortfolio(repPortfolio)}
-        ${navSocial(navSocialContainer)}
-
-        ${zommPhoto(photo, zoomMyPhoto, zoomPhotoStyle, rightZoomPhotoButton, closePhoto)}
-        ${textAboutMeSectionsInsertText(textAboutMeSectionsContent)}
-        ${textAboutMeSections(textAboutMeSectionsContent, leftArrow, rightArrow)}
-
-        ${insertIsometric(isometric)}
-        ${insertCurrentlyStudying(currentlyStudying)}
-        ${insertSkillItem(skillsPro, activeButtonSkill)}
-
-        ${insertButtonsPortfolio(navSectionsProjects)}
-        ${insertProjects([websSectionProjects, gamesSectionProjects], navSectionsProjects, selectSection)}
-
-        ${createFormContainer(formContainer, submit, errorMessage)}
-        `;
-}(root);
+      resets();
+})(root);

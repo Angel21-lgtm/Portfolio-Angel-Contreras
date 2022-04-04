@@ -10,8 +10,7 @@
     }
 
     .home > div > h2{
-        font-size: 1.97rem;
-        font-weight: 800;
+        font-size: 1.6rem;
     }
 
     .home > div > h2 > div{
@@ -40,16 +39,11 @@
     }
 
     .home > div > h2{
-        font-size: 2.95rem;
+        font-size: 2.6rem;
     }
 
     .home > div > h2 > div{
         margin: 1px;
-    }
-
-    .home > div > h2 > .space{
-        width: auto;
-        margin: 0.5rem;
     }
 
     .home > nav{
@@ -66,16 +60,17 @@
         border-radius: 3rem;
     }
 
-    .home > div > h2{
-        font-size: 4rem;
-        font-weight: 900;
+    .home > div > h2 > .space{
+        width: auto;
+        margin: 0.3rem;
     }
-
 }
 
 /* 992 and 1199 pixels */
 @media (min-width: 992px){
-
+    .home > div > h2{
+        font-size: 3.6rem;
+    }
 }
 
 /* 1200 and onwards pixels */
@@ -91,7 +86,7 @@
     }
 
     .home > div > h2{
-        font-size: 5rem;
+        font-size: 4.6rem;
     }
 
     .home > div > span > .buttons-cv-and-github{

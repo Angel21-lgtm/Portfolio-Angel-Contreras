@@ -1,9 +1,5 @@
-#portfolio:hover .title-portfolio{
-    color: var(--white-da);
-}
-
 .nav-sections-projects button:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 0 0.5rem 0.1rem var(--black);
 }
 

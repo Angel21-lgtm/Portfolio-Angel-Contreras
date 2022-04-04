@@ -17,6 +17,11 @@ const insertButtonsPortfolio = (containerId) => {
             text: "Juegos",
             classList: "",
         },
+        {
+            id: "apps-web",
+            text: "Aplicaciones Web",
+            classList: "",
+        },
     ];
 
     let htmlContent = "";

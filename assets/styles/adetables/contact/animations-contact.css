@@ -1,7 +1,3 @@
-#contact:hover .title-contact{
-    color: var(--white);
-}
-
 form input:hover{
     color: var(--black);
     background-color: var(--white-da);
