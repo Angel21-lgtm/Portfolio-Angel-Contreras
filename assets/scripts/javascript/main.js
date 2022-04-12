@@ -2,15 +2,15 @@
 
 const root = document.getElementById("root");
 
-// library
-import { dropdown } from "./library/menu.js";
-import { scrollMenuFixed } from "./library/scroll.js";
+// back
 
 // resets
 import { resets } from "./resets.js";
+import { styleFixedScroll } from "./resets.js";
 
 // dropdown-menu
 import { insertItemDropdownMenu } from "./adetables/menu/dropdown-menu/insertItemDropdownMenu.js";
+import { activeDropdownMenu } from "./adetables/menu/dropdown-menu/activeDropdownMenu.js";
 import { selectOptionDropdownMenu } from "./adetables/menu/dropdown-menu/selectOptionDropdownMenu.js";
 import { scrollSectionDropdownMenu } from "./adetables/menu/dropdown-menu/scrollSectionDropdownMenu.js";
 
@@ -42,26 +42,26 @@ import { insertButtonsPortfolio } from "./adetables/portfolio/insertButtonsPortf
 import { insertProjects } from "./adetables/portfolio/insertProjects.js";
 
 // contact
-import { createFormContainer } from "./adetables/contact/createFormContact.js";
+import { submitData } from "./adetables/contact/submitData.js";
 
 const main = (function(root){
 
     // dropdown-menu
     const styleDropdownMenu = "active-dropdown-menu",
-          buttonMenu = document.querySelector(".button-menu"),
-          imgMenu = document.querySelector(".image-menu"),
-          dropdownMenu = document.getElementById("dropdown-menu");
+      buttonMenu = document.querySelector(".button-menu"),
+      imgMenu = document.querySelector(".image-menu"),
+      dropdownMenu = document.getElementById("dropdown-menu");
 
     const scrollImageDropdownMenu = "scroll-image-dropdown-menu";
 
-    const styleOneSelectOptionDropdownMenu = "select-option-dropdown-menu",
-          styleTwoSelectOprtionDropdownMenu = "select-option-dropdown-menu-color";
+    const selecOptionDropdowMenu = "select-option-dropdown-menu",
+      selectOptionDropdownMenuColor = "select-option-dropdown-menu-color";
 
+    styleFixedScroll(imgMenu, scrollImageDropdownMenu); // resets
     insertItemDropdownMenu(dropdownMenu);
-    dropdown(styleDropdownMenu, buttonMenu, dropdownMenu);
-    scrollMenuFixed(imgMenu, scrollImageDropdownMenu);
-    selectOptionDropdownMenu(styleOneSelectOptionDropdownMenu, styleTwoSelectOprtionDropdownMenu, styleDropdownMenu, dropdownMenu);
-    scrollSectionDropdownMenu(dropdownMenu, styleTwoSelectOprtionDropdownMenu, styleOneSelectOptionDropdownMenu);
+    activeDropdownMenu(styleDropdownMenu, buttonMenu, dropdownMenu); // Active dropdown menu whith click in the button
+    selectOptionDropdownMenu(selecOptionDropdowMenu, selectOptionDropdownMenuColor, styleDropdownMenu, dropdownMenu);
+    scrollSectionDropdownMenu(dropdownMenu, selectOptionDropdownMenuColor, selecOptionDropdowMenu);
           
     // static-menu
     const homeLogo = document.getElementById("home-logo"),
@@ -73,8 +73,8 @@ const main = (function(root){
     const styleSelectOptionStaticMenu = "select-option-static-menu";
 
     insertItemStaticMenu(staticMenu);
-    scrollMenuFixed(homeLogo, positionLogo);
-    scrollMenuFixed(staticMenu, scrollStaticMenu);
+    styleFixedScroll(homeLogo, positionLogo);
+    styleFixedScroll(staticMenu, scrollStaticMenu);
     selectOptionStaticMenu(staticMenu, styleSelectOptionStaticMenu);
     selectIcon(staticMenu);
     scrollSectionStaticMenu(staticMenu, styleSelectOptionStaticMenu);
@@ -141,11 +141,10 @@ const main = (function(root){
     insertProjects([websSectionProjects, gamesSectionProjects, appsWebSectionProjects], navSectionsProjects, selectSection);
 
     // contact
-    const formContainer = document.getElementById("form"),
-          submit = document.getElementById("submit"),
-          errorMessage = document.getElementById("error-message");
+    const form = document.getElementById("form"),
+      errorMessage = document.getElementById("error-message");
 
-      createFormContainer(formContainer, submit, errorMessage);
+    submitData(form, errorMessage);
 
-      resets();
+    resets();
 })(root);

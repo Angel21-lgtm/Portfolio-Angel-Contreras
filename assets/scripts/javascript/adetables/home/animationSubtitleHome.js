@@ -40,7 +40,7 @@
         }
 
         htmlCollectionLettersMouseover(){
-            this.htmlCollectionId.forEach(async (item) => {
+            this.htmlCollectionId.forEach((item) => {
                 item.addEventListener("mouseover", () => {
                     item.classList.add(this.classAdd);
                     setTimeout(() => {

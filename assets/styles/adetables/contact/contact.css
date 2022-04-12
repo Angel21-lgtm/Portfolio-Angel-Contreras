@@ -1,5 +1,5 @@
 form .message-form{
-    height: 250px;
+    height: 100px;
     margin-bottom: 1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -54,3 +54,77 @@ form .submit-form{
     font-family: "Oswald-ExtraLight" !important;
     font-weight: 100 !important;
 }
+
+/* events */
+
+/* submitData */
+#confirm-message{
+    width: 100vw;
+    height: 100vh;
+    background: var(--amy-crisp);
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#confirm-message .loading{
+    width: 90px;
+    height: 90px;
+    animation: loading infinite 1s;
+    border-radius: 50%;
+}
+
+.ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--black);
+}
+
+#confirm-message .loading .ball-loading-1{
+    left: 0;
+}
+
+#confirm-message .loading .ball-loading-2{
+    top: -15px;
+    right: calc(50% - 10px);
+}
+
+#confirm-message .loading .ball-loading-3{
+    top: 0;
+    right: 0;
+}
+
+#confirm-message .loading .ball-loading-4{
+    right: -15px;
+    bottom: calc(50% - 10px);
+}
+
+#confirm-message .loading .ball-loading-5{
+    right: 0;
+    bottom: 0;
+}
+
+#confirm-message .loading .ball-loading-6{
+    right: calc(50% - 10px);
+    bottom: -15px;
+}
+
+#confirm-message .loading .ball-loading-7{
+    left: 0;
+    bottom: 0;
+}
+
+#confirm-message .loading .ball-loading-8{
+    left: -15px;
+    bottom: calc(50% - 10px);
+}
+
+.loading-text{
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 0.25rem 0.2rem var(--black);
+    color: var(--white);
+    animation: loading-text 2s infinite ease;
+}
+/* submitData */

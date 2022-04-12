@@ -7,3 +7,30 @@ form .message-form:hover{
     color: var(--black);
     background-color: var(--white-da);
 }
+
+/* submitData */
+@keyframes loading{
+    from{
+        transform: rotateZ(360deg);
+        opacity: 0.5;
+    }
+    to{
+        transform: rotateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes loading-text{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+/* submitData */

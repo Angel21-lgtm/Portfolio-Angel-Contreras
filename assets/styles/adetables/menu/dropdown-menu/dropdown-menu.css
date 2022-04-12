@@ -2,7 +2,7 @@
     height: 50px;
     background: var(--amy-crisp);
     border-bottom: 3px solid var(--black);
-    transition: all ease-out 3s;
+    transition: all ease-out 0.5s;
     top: 0;
     z-index: 10;
 }
@@ -17,7 +17,7 @@
     overflow: hidden;
     left: -100%;
     bottom: 0;
-    transition: all ease-out 1.5s;
+    transition: all ease-out 0.5s;
     z-index: 10;
 }
 
